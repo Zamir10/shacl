@@ -1,0 +1,3183 @@
+{
+  "shapeGraph": [
+    {
+      "rdfs:comment": "Exactly 1 quality attribute should be selected",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/8d7da431-53da-4dec-8e9e-6c2bc2730663",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Exactly,1",
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "3021",
+            "3024",
+            "3023",
+            "3022",
+            "3022SI",
+            "3021SI",
+            "3023SI",
+            "3021BW",
+            "3024SI",
+            "3023BW",
+            "3053",
+            "3052",
+            "3051",
+            "3054",
+            "3052SI",
+            "3051SI",
+            "3053SI",
+            "3022BW",
+            "3054SI",
+            "3052BW",
+            "3053BW"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/quali"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6dcdcaf0cf0010b27ef6"
+    },
+    {
+      "rdfs:comment": "Exactly 1 color must be selected",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/cdbb3bd1-b5dd-4fac-8588-7242ed9d2dab",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Exactly,1",
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "02",
+            "17",
+            "23",
+            "16",
+            "A2",
+            "35",
+            "03"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6de4caf0cf0010b27ef7"
+    },
+    {
+      "rdfs:comment": "Should go to review (Baltik collection)",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/d4074885-9717-468a-aaf1-bd3e8b20dbe0",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "black",
+            "white"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6f30caf0cf0010b27ef8"
+    },
+    {
+      "rdfs:comment": "At least 1 (Befestigung)",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/2dd5ffe0-731b-42b2-b357-dde3ff65aa15",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Exactly,1",
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "010"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/adiverse"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6f67caf0cf0010b27ef9"
+    },
+    {
+      "rdfs:comment": "Max 1 (Befestigung) sub-area 1",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/592159c8-eebd-4f05-a658-3a8e5fbbf248",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "022",
+            "098",
+            "066"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/aueberhoeh"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6f8acaf0cf0010b27efa"
+    },
+    {
+      "rdfs:comment": "Exactly 1 (Befestigung) sub-area 2",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/2365e896-1876-4f97-bb65-48391897ac0c",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Exactly,1",
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "020",
+            "083",
+            "013",
+            "119",
+            "081",
+            "014"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/ahaftrand"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6f9ecaf0cf0010b27efb"
+    },
+    {
+      "rdfs:comment": "Max 1 (Befestigung) sub-area 3",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/053025ce-a111-459b-a12a-f0b61ec6816c",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "033",
+            "032"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/ahrinnen"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6fb3caf0cf0010b27efc"
+    },
+    {
+      "rdfs:comment": "Max 1 (Befestigung) sub-area 5",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/04911cc6-bc52-49b9-9fb2-25a0f53a944a",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "024",
+            "023",
+            "025"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/ahueftbef"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f6fc8caf0cf0010b27efd"
+    },
+    {
+      "rdfs:comment": "Max 1 (Zwickel) sub-area 3",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/d130969c-3277-448b-b806-69e2ecece7b2",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "130",
+            "054"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/aabschlut"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f7003caf0cf0010b27efe"
+    },
+    {
+      "rdfs:comment": "Exactly 1 (Zwickel) sub-area 3-5",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/d2a32921-4ae1-48d4-a718-2861c0681499",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Exactly,1",
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:or": {
+          "@list": [
+            {
+              "sh:in": {
+                "@list": [
+                  "081"
+                ]
+              },
+              "sh:maxCount": 1,
+              "sh:minCount": 1,
+              "sh:path": {
+                "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/ahaftrand"
+              }
+            },
+            {
+              "sh:in": {
+                "@list": [
+                  "130",
+                  "054",
+                  "012"
+                ]
+              },
+              "sh:maxCount": 1,
+              "sh:minCount": 1,
+              "sh:path": {
+                "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/aabschlut"
+              }
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f7026caf0cf0010b27eff"
+    },
+    {
+      "rdfs:comment": "Max 1 (Zwickel) sub-area 7",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/0f50f7b9-fd47-4877-afc3-7870682f11f7",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "094",
+            "021",
+            "105"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/azwickel"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f7045caf0cf0010b27f00"
+    },
+    {
+      "rdfs:comment": "Max 1 (Zwickel) sub-area 8",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/f36e0a46-5a69-4b08-98cb-0d4e19c06277",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "383",
+            "107"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/azwickel"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5d9f7052caf0cf0010b27f01"
+    },
+    {
+      "rdfs:comment": "0 or 1 filled checkboxes are allowed for “Ausführung”",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/f649df73-e569-4c4e-88c5-0bec81235daf",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "AT",
+            "AD",
+            "AG",
+            "BT",
+            "AF",
+            "FT",
+            "ET",
+            "B1T",
+            "CT"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/form"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5da05216caf0cf0010b27f03"
+    },
+    {
+      "rdfs:comment": "Max 1 Zwickel 1",
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/8e2612ac-eb7f-4ba9-a7f7-8e23f0ab7fa6",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "rdfs:label": "Maximum,1",
+      "sh:qualifiedMinCount": 0,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "035",
+            "034"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/aleibteil"
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "id": "5da0582acaf0cf0010b27f04"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/f3e96136-e9d8-45b0-9b01-fd046d033dd6",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "rdfs:comment": "5% Regel",
+      "sh:sparql": {
+        "sh:message": "Unterschied max 5%",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lktv> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lt> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5da2c12ecaf0cf0010b27f0d"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/7f98b3c9-1e99-48c3-bb87-0a0d278c1c90",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lktv> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lt> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e11da0795d0010d3cdaa"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/51c7b613-2905-47b2-b2d9-a8fc62828caa",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lkth> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lh> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e131a0795d0010d3cdab"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/2e9ad114-b1e8-47fe-93c5-a84c2264f38a",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lgl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lgr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e144a0795d0010d3cdac"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/8a4b9023-1fd3-4f24-b77a-5b25a1beeab4",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lfr> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lfl> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e158a0795d0010d3cdad"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/4863016d-5486-49e1-9604-5d55ef5a0c21",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lel> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/ler> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e1b2a0795d0010d3cdae"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/be4aa1d3-4521-4645-85d3-6c9448cc48bc",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/ldl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/ldr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e1dfa0795d0010d3cdaf"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/490f8f1b-53ca-4a22-ae6a-64852aea6546",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lcl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lcr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e1f3a0795d0010d3cdb0"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/9f60b20d-8bec-4ba1-823a-eb812e9e646e",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lb1l> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lb1r> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e203a0795d0010d3cdb1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/8d4d0af1-272a-48af-94d3-a73e145e148f",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lbl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lbr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e223a0795d0010d3cdb2"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/ffe2e9a9-9084-4d24-809f-c49b30098813",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lair> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lail> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e236a0795d0010d3cdb3"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/e3f75e84-b7b2-48b4-b4e8-883962169278",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/laal> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/laar> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e247a0795d0010d3cdb4"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/51283837-8ce4-441c-a423-42c73a803029",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cgl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cgr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e262a0795d0010d3cdb5"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/52b72108-203c-4083-9b6e-57b1e9c073a7",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cfl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cfr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e276a0795d0010d3cdb6"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/cee4afa2-831b-4437-bc4e-d5f3add1cab0",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cer> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cel> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e2c2a0795d0010d3cdb7"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/aeed88f5-b31f-4fee-98ca-9de46886dd57",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cdl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cdr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e2f6a0795d0010d3cdb8"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/c8f57b2f-5002-4de6-914b-086115a0159b",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/ccl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/ccr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e304a0795d0010d3cdb9"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/d849505b-4a72-4616-97c0-1d93c9da21e8",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cb1l> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cb1r> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e321a0795d0010d3cdba"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/48a3eaf4-75da-470d-acbc-b0f6be6e3d12",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cbl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cbr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e335a0795d0010d3cdbb"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/666599f2-c3ed-478d-a791-a1ee89b57fad",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cyl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/cyr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e34fa0795d0010d3cdbc"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/645a1cf4-b1e5-48d0-a1fe-e6ad7312dfd3",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/cal> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/car> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e367a0795d0010d3cdbd"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/27f665da-3680-4a0b-8ac4-da4c239e49c6",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lal> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lar> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e376a0795d0010d3cdbe"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/20bcbe12-b36e-4aeb-add0-57e1c92818d7",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Maximum Difference,5",
+      "sh:sparql": {
+        "sh:message": "The difference between {?dvalue1} and {?dvalue2} is too great.",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/2001/XMLSchema#"
+              },
+              "sh:prefix": "xsd"
+            }
+          ]
+        },
+        "sh:select": "SELECT $this ?resourceR ?resourceL ?raR ?raL ?value1 ?value2 ?dvalue1 ?dvalue2 ?min ?max\nWHERE {\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceL .\n?resourceL <http://ai4bd.com/resource/gdm/contains> ?raL .\n?raL <http://ai4bd.com/resource/cdm/juzo/numeric/lzl> ?value1 .\n$this <http://ai4bd.com/resource/edm/interpretedContent> ?resourceR .\n?resourceR <http://ai4bd.com/resource/gdm/contains> ?raR .\n?raR <http://ai4bd.com/resource/cdm/juzo/numeric/lzr> ?value2 .\nBIND(xsd:float(REPLACE( ?value1, \",\", \".\" )) AS ?dvalue1) .\nBIND(xsd:float(REPLACE( ?value2, \",\", \".\" )) AS ?dvalue2) .\nBIND( IF((?dvalue1 < ?dvalue2), ?dvalue1, ?dvalue2) AS ?min) .\nBIND( IF((?dvalue1 > ?dvalue2), ?dvalue1, ?dvalue2) AS ?max) .\nFILTER (!(?min*1.05 >= ?max)) .\n}"
+      },
+      "id": "5db6e383a0795d0010d3cdbf"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/471c180a-bb23-413d-ae9a-e422ad6cb228",
+      "@type": "http://www.w3.org/ns/shacl#NodeShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      },
+      "rdfs:label": "Exactly,1",
+      "rdfs:comment": "Es kann nur eine Ausführung / Form geben.",
+      "sh:path": {
+        "@list": [
+          {
+            "@id": "edm:interpretedContent"
+          },
+          {
+            "@id": "gdm:contains"
+          }
+        ]
+      },
+      "sh:qualifiedMaxCount": 1,
+      "sh:qualifiedMinCount": 1,
+      "sh:qualifiedValueShape": {
+        "sh:in": {
+          "@list": [
+            "AD",
+            "AF",
+            "AG",
+            "AT",
+            "ET",
+            "FT",
+            "BT",
+            "B1T",
+            "CT"
+          ]
+        },
+        "sh:maxCount": 1,
+        "sh:minCount": 1,
+        "sh:path": {
+          "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/form"
+        }
+      },
+      "id": "5dce71e8ee2bac00118f3ab5"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/89166cf7-c784-41cf-bbe2-c10748d2ca83",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "RF_mehrere Farben",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/89166cf7-c784-41cf-bbe2-c10748d2ca83",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Maximum,1",
+                "rdfs:comment": "mehr als eine Farbe",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "02",
+                      "17",
+                      "23",
+                      "A2",
+                      "35",
+                      "16",
+                      "03"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/edm/textField> \"Inquerytrue\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/6ae4b4c2-36ca-4dd6-b35d-0ad5dcaa4787",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "RF-mehrere Quali",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/6ae4b4c2-36ca-4dd6-b35d-0ad5dcaa4787",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Maximum,1",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "3022",
+                      "3023SI",
+                      "3021BW",
+                      "3051",
+                      "3021",
+                      "3051SI",
+                      "3022SI",
+                      "3052",
+                      "3022BW",
+                      "3052BW",
+                      "3023",
+                      "3052SI",
+                      "3023BW",
+                      "3053",
+                      "3053SI",
+                      "3053BW",
+                      "3024",
+                      "3024SI",
+                      "3054",
+                      "3054SI"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/quali"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/edm/textField> \"Inquerytrue\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/2381ea4e-410e-489e-8917-0bddc88e0196",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "RF_mehrere Qualitäten",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/2381ea4e-410e-489e-8917-0bddc88e0196",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Maximum,1",
+                "rdfs:comment": "mehr als eine Qualität",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "3022",
+                      "3023SI",
+                      "3021BW",
+                      "3051",
+                      "3021",
+                      "3051SI",
+                      "3022SI",
+                      "3052",
+                      "3022BW",
+                      "3052BW",
+                      "3023",
+                      "3052SI",
+                      "3023BW",
+                      "3053",
+                      "3053SI",
+                      "3053BW",
+                      "3024",
+                      "3024SI",
+                      "3054",
+                      "3054SI"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/quali"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/edm/textField> \"Inquerytrue\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/1c07ee49-4ae2-4f11-9835-f7f896d4922b",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "RF_mehrere Qualitäten",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/1c07ee49-4ae2-4f11-9835-f7f896d4922b",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Maximum,1",
+                "rdfs:comment": "mehr als eine Qualität",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "3022",
+                      "3023SI",
+                      "3021BW",
+                      "3051",
+                      "3021",
+                      "3051SI",
+                      "3022SI",
+                      "3052",
+                      "3022BW",
+                      "3052BW",
+                      "3023",
+                      "3052SI",
+                      "3023BW",
+                      "3053",
+                      "3053SI",
+                      "3053BW",
+                      "3024",
+                      "3024SI",
+                      "3054",
+                      "3054SI"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/quali"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/edm/textField> \"Inquerytrue\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/b758288d-9050-466d-8a00-70662f52734f",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "RF_mehrere Formen",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/b758288d-9050-466d-8a00-70662f52734f",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Maximum,1",
+                "rdfs:comment": "mehr als eine Form",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "AD",
+                      "AF",
+                      "AG",
+                      "AT",
+                      "ET",
+                      "FT",
+                      "BT",
+                      "B1T",
+                      "CT"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/form"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/edm/textField> \"Inquerytrue\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/69e200e0-0378-4db2-8caa-2ba2e263dfd7",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "FB_Batik-Weiß/Sesam",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/69e200e0-0378-4db2-8caa-2ba2e263dfd7",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Batik-weiß",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "white"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/69e200e0-0378-4db2-8caa-2ba2e263dfd7",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Sesam",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "12"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"K6\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"white\" }\nFILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"12\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/81a69c19-a8dd-4393-8134-ea241c8f899d",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "FB_Batik-Weiß/Pfeffer",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/81a69c19-a8dd-4393-8134-ea241c8f899d",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Batik weiß",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "white"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/81a69c19-a8dd-4393-8134-ea241c8f899d",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Pfeffer",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "03"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"K1\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"white\" }\nFILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"03\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/7e70e22b-458f-490e-a7b4-5b28695bf6a1",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "FB_Batik-Weiß/Mohn",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/7e70e22b-458f-490e-a7b4-5b28695bf6a1",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Batik-Weiß",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "white"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/7e70e22b-458f-490e-a7b4-5b28695bf6a1",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Mohn",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "35"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"K3\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"white\" }\nFILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"35\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/fc22deed-bb59-4e89-bc16-4b55ae7429bb",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "FB_Batik-Weiß/Kakao",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/fc22deed-bb59-4e89-bc16-4b55ae7429bb",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Batik-Weiß",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "white"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/fc22deed-bb59-4e89-bc16-4b55ae7429bb",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Kakao",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "A2"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"K2\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"white\" }\nFILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"A2\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/9fe44e24-e83b-4b9d-91a8-3299a833c90f",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "FB_Batik-Weiß/Blaubeere",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/9fe44e24-e83b-4b9d-91a8-3299a833c90f",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Batik-Weiß",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "white"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/batik"
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/9fe44e24-e83b-4b9d-91a8-3299a833c90f",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Blaubeere",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "16"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"K5\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"white\" }\nFILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"16\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/f81a179a-75ef-48b7-9ccf-88c11ae80704",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "kein KV -> Bestellung",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/f81a179a-75ef-48b7-9ccf-88c11ae80704",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,0",
+                "rdfs:comment": "Kein KV",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 0,
+                "sh:qualifiedMinCount": 0,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "KV"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/orderType"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/orderType> \"OA\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "@type": "edm:InferenceShape",
+      "rdfs:label": "linke Einbeinstrumpfhose test",
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "sh:rule": {
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "@id": "http://ai4bd.com/resource/data/edm/inference-shape/f3bca2d1-33ac-4bb5-bfd8-9707427fb15d-condition",
+          "@type": "sh:NodeShape",
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c1",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Minimum,1",
+                "rdfs:comment": "Min 1 left Measure",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:or": {
+                    "@list": [
+                      {
+                        "sh:maxCount": 1,
+                        "sh:minCount": 1,
+                        "sh:path": {
+                          "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/cel"
+                        }
+                      },
+                      {
+                        "sh:maxCount": 1,
+                        "sh:minCount": 1,
+                        "sh:path": {
+                          "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/cyl"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "@id": "http://ai4bd.com/resource/data/edm/inference-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c2",
+                "@type": "http://www.w3.org/ns/shacl#NodeShape",
+                "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork": "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass": {
+                  "@id": "edm:Document"
+                },
+                "rdfs:label": "Exactly,1",
+                "rdfs:comment": "Strumpfhose",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount": 1,
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "sh:in": {
+                    "@list": [
+                      "AT"
+                    ]
+                  },
+                  "sh:maxCount": 1,
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/form"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/form> \"CTL\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document>.\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n\n                ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n}\n\n                    OPTIONAL {?v ?a ?b}\n\n                    {\n\n                        SELECT ?v WHERE {\n\n                            ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\n                            FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/form> \"AT\" }\n                        }\n\n                    }\n\n                }\n\n            }",
+        "sh:prefixes": {
+          "sh:declare": [
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "sh:namespace": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix": "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    }
+  ],
+  "dataGraph": {
+    "dateCreated": "2020-03-26T13:23:39.655Z",
+    "@type": "edm:Document",
+    "@id": "http://ai4bd.com/resource/data/document/cd4f1efc-540b-481a-bad3-51f504807c3e",
+    "relatedCreativeWork": "http://ai4bd.com/resource/data/document/98e1d487-85d3-4be5-a1a9-1407d432c989",
+    "title": "leg_test.png - Page 1",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "interpretedContent": [
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/140c1428-510a-4427-b5ac-08bd12fd2b32",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "juzo-boolean:unitOfQuantity": "stück",
+            "confidence": 0.9055855870246887,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/856a6643-be64-4577-96cd-e0b65d836f18",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:form": "AT",
+            "confidence": 0.9689604043960571,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b17f0a84-b780-4f19-a051-bfacd9519474",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:form": "AG",
+            "confidence": 0.6345134377479553,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1aba64e5-4b0a-43a4-861a-0d6e80cd3c12",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:aueberhoeh": "066",
+            "confidence": 0.9604515433311462,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b0e9fea8-789a-4e40-8f2d-5117a3c17605",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:adiverse": "010",
+            "confidence": 0.5656189918518066,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ef9c1667-c0c0-48a4-9b32-c3d31578bc4e",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:azwickel": "105",
+            "confidence": 0.5283122658729553,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/73bc9e06-da9a-461e-9fad-5c96d0b062bb",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:aleibteil": "035",
+            "confidence": 0.973458468914032,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/cea6a473-63f6-4ff5-80fa-2265b3f73e1c",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:aspitze": "001",
+            "confidence": 0.9239808917045593,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b2fc3fe1-993d-4ed4-accb-910b2510779f",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:aballenans": "064",
+            "confidence": 0.9729666113853455,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/2bf77758-633c-441c-87a9-a30f0731b63b",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:aristeinke": "077",
+            "confidence": 0.9737809896469116,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/00242a4d-86ab-4a9c-9faa-5e288ba16fc6",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      },
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/82b9ce92-3c70-41c0-8e4f-c31d91a4a0ed",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "juzo-numeric:ct": "105",
+            "confidence": 0.9897502,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/e55caae3-0de5-428c-9f6a-6839c118dc21",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lgl": "81",
+            "confidence": 0.99830085,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/fd8cbfb1-0181-4a37-ad8b-1bc7b676ef8a",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cgr": "68",
+            "confidence": 0.996975,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/dfa944a2-0c04-4033-8aec-1c4a8e46a331",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cfr": "56",
+            "confidence": 0.93980163,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/7d9881b6-79a7-47f4-9a31-271f7756c4bc",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lgr": "81",
+            "confidence": 0.9796908,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/23388253-de93-4c75-b628-69cbcd0379d0",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cer": "44",
+            "confidence": 0.99888235,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/c6d9e4d8-f210-484e-91b1-4342524ad701",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ccr": "41,5",
+            "confidence": 0.8972993,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/bffd3dca-dafd-4678-b7a2-1c6c52e0a795",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cdr": "38",
+            "confidence": 0.9989475,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/d99fbb5a-dbed-4b9d-aab5-e9b5e5e85dd9",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cb1r": "34",
+            "confidence": 0.99954474,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/4ba54bfb-732c-4146-ba8e-09ebb98024e0",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cbr": "23,5",
+            "confidence": 0.9898721,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b5a7777d-9366-4f36-8d7d-003e10b827a6",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cyr": "94,5",
+            "confidence": 0.54414064,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/10ea4f94-035e-447b-9d64-6b04bff11233",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:car": "23",
+            "confidence": 0.9831354,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/f252c231-a826-412a-8f60-0a0d5eea4f47",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lfl": "66",
+            "confidence": 0.9751659,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/6d72bbed-a07f-4add-8097-cd292cc4d8b5",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lel": "45",
+            "confidence": 0.51433647,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/e168d97c-6fc3-4473-963b-553cf509e3d0",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ldl": "44",
+            "confidence": 0.9963919,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/cbcb570c-6a83-4818-ab5b-9c46ebec3910",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ch": "110",
+            "confidence": 0.984487,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b8a2c04a-17c1-418a-8030-fb04f34206be",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lbl": "12",
+            "confidence": 0.9599271,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b7df88c1-b9eb-4623-9ca6-06d2403a383a",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lb1l": "24",
+            "confidence": 0.9976816,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/0495ab48-073d-4e78-9d7a-3bf770ae1591",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lcl": "36",
+            "confidence": 0.99755174,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/5a71f574-4c27-48bc-8bc1-94f7736b3675",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lfr": "66",
+            "confidence": 0.9389502,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/e9cdf46b-bb0b-40ca-92e2-caa0aa1b31a9",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lzr": "25",
+            "confidence": 0.99914926,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1f775738-1e62-4bfa-bc85-a6261f7fe6ab",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ck": "115",
+            "confidence": 0.99777704,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/d6ee8149-e4d1-4c51-97d8-543206434b7b",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lcr": "36",
+            "confidence": 0.9962939,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/b10f611f-29a9-410b-adbf-8cf8b8fa1ed1",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ldr": "44",
+            "confidence": 0.99194384,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1ad7b0f2-4006-4cea-9747-03f9bfe9826a",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ler": "49",
+            "confidence": 0.9933997,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/fc040e72-697b-42bd-bd17-83074db47c84",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cel": "43",
+            "confidence": 0.9998121,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/f4448aca-79d1-4c2b-bc4d-e70c242bf356",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lbr": "11",
+            "confidence": 0.51213366,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/57b792dd-62d5-4929-9399-f9863716dbdc",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cgl": "68",
+            "confidence": 0.9918308,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/953281a9-4a17-4b1e-9da7-dfa90524c144",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lb1r": "24",
+            "confidence": 0.9990909,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/5efe3f45-e531-46ca-b511-fe4c88acfbaf",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ccl": "41",
+            "confidence": 0.9989114,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/3f3eff91-4325-492d-bfbf-7fe27ec516ce",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cb1l": "35",
+            "confidence": 0.996655,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/e72140fa-6399-4961-8e9d-9db653519cc5",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cdl": "38",
+            "confidence": 0.9973221,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/740e0553-3129-4a7b-a496-1bf7edae1f5d",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cfl": "56",
+            "confidence": 0.9840571,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/194a9dd7-36d2-442d-94fd-e66384fa0269",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cbl": "23",
+            "confidence": 0.997346,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/eba6e782-406d-467c-8072-7bef56dfb170",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cyl": "30",
+            "confidence": 0.8425217,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/cfd2f0da-5a60-4756-94a3-4adccdbbc5b1",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lt": "110",
+            "confidence": 0.99725384,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/da872f37-3310-4ccd-91d9-bacd88f0646f",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:cal": "22",
+            "confidence": 0.97159207,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/2d047502-11b6-487c-9207-602d2a45848b",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lkth": "36",
+            "confidence": 0.99517953,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/4693d65e-d6e5-4274-911a-ed5c27d3fd55",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lzl": "25,5",
+            "confidence": 0.9919512,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/794d5c5d-b681-4e1f-8808-8ba287fec6ae",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lh": "95",
+            "confidence": 0.9895429,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/324857de-5b5a-448c-88a0-6cd127396213",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lktv": "35",
+            "confidence": 0.999101,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/343863b7-7e0c-416e-a449-0fd57b656303",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:blli": "91",
+            "confidence": 0.6339203,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ef487f8c-3f05-48e3-9d09-2b289953eb71",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:blri": "21",
+            "confidence": 0.9790956,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/acce5d4d-8c34-424f-bada-bfe2d826650e",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:blra": "19",
+            "confidence": 0.90572286,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1e021728-6056-4995-a3cc-096e3a8a3d40",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:blla": "15",
+            "confidence": 0.9988111,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/bc0b8996-2de2-4b4a-a116-3d3101525b78",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      },
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/3a940c03-10c4-4bca-8100-4d11aa48136e",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "edm:customerNumber": "3914500",
+            "confidence": 0.7841943,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/28186095-a8e4-40a9-9c0a-4a07a8e87486",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "edm:comment": "Bitte Kommentar beachten",
+            "confidence": 0.99,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1b4f7f82-bbc3-496f-b868-5508576a6063",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-alpha:consignment": "Bitte Kommission beachten",
+            "confidence": 0.99,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/f4ff25d2-d2a8-46dd-af97-997bbd6b9ad6",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-alpha:referenceOrder": "Bitte Frühere Anfertigung/KV-Nr./Datum beachten",
+            "confidence": 0.99,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/1b7ad4dd-2d79-4287-b81c-f1277f73bb95",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      },
+      {
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/82636873-d76d-40ae-a380-d56276d17311",
+        "contains": [
+          {
+            "@type": "gdm:GdmResourceAttribute",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/a144d48c-c035-481d-978c-7aeb5e1a332a",
+            "confidence": 1.0,
+            "edm:templateName": "8651LY_MB_Bein_A4_DEU_8_10"
+          }
+        ]
+      }
+    ],
+    "documentPage": [
+      "http://ai4bd.com/resource/data/document-page/f5fbb838-965c-4cbb-aa3e-c4fd8b44f03e"
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/da41b97a-f31f-467e-afa2-696b9063f845",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:09:51+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/53152887-81c1-4ce7-928d-d0070cc5ef44"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/c06b4a53-8719-40f4-85c5-76add08c777b"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/resource-attribute/c06b4a53-8719-40f4-85c5-76add08c777b",
+    "@type" : "gdm:ResourceAttribute",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "confidence" : "1.0",
+    "returnFlowTemperature" : "49.2",
+    "unit" : "http://qudt.org/vocab/unit/DEG_C"
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/8608b8a2-b96f-49fc-bd84-f5a3f7f3f289",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/da41b97a-f31f-467e-afa2-696b9063f845"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/5eafeff2-ba40-4b5a-b573-1d656f028a88"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/software-agent/5eafeff2-ba40-4b5a-b573-1d656f028a88",
+    "@type" : "edm:SoftwareAgent",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "label" : "Temperature Sensor 4"
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/c7638619-2cec-4230-9766-a5f320fa4005",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:11:56+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f",
+    "@type" : "gdm:ResourceAttribute",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "confidence" : "1.0",
+    "returnFlowTemperature" : "42.1",
+    "unit" : "http://qudt.org/vocab/unit/DEG_C"
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/9ba74dda-250a-406c-bac4-6d6bda0e4489",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/c7638619-2cec-4230-9766-a5f320fa4005"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72",
+    "@type" : "edm:SoftwareAgent",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "label" : "Binary Sensor 1"
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/bd4ec0f8-c2db-4209-8ec9-2c21647c28b6",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:12:32+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/4d27c89f-cc45-401e-a984-45fc0de64be7",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/bd4ec0f8-c2db-4209-8ec9-2c21647c28b6"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/e7197a7c-90f8-4972-84ef-c536f5be29f1",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:12:08+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/8d2beef5-488a-431a-9ec5-9afcfe1fc0d1"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/resource-attribute/8d2beef5-488a-431a-9ec5-9afcfe1fc0d1",
+    "@type" : "gdm:ResourceAttribute",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "confidence" : "1.0",
+    "returnFlowTemperature" : "35.6",
+    "unit" : "http://qudt.org/vocab/unit/DEG_C"
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/dc211e5d-dea8-4a51-8e17-2f2760fabe53",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/e7197a7c-90f8-4972-84ef-c536f5be29f1"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/3a37776b-41d2-4fae-bd7e-249c4c92f18c",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:12:20+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/8d2beef5-488a-431a-9ec5-9afcfe1fc0d1"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/9abc71eb-d45d-410c-b254-db98fe4fb636",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/3a37776b-41d2-4fae-bd7e-249c4c92f18c"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/3ef2280f-f863-4660-bc1d-5e28f062e4cf",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:12:44+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/77882983-75b1-4780-a2db-bc5ef1d23966",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/3ef2280f-f863-4660-bc1d-5e28f062e4cf"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/89af0d41-e9a2-40fe-9dd9-e5290447f51f",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:12:57+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/48d31f01-1415-4074-a47f-1426385312fd",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/89af0d41-e9a2-40fe-9dd9-e5290447f51f"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  },
+  {
+    "@id": "http://ai4bd.com/resource/data/resource/df4c32dc-d0af-4a29-a4e6-886364958389",
+    "@type": "gdm:Resource",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "dateCreated": "2020-07-15T13:13:09+02:00",
+    "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+    "happensAt": [
+      "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+      "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+    ],
+    "contains": [
+      "http://ai4bd.com/resource/data/resource-attribute/8d2beef5-488a-431a-9ec5-9afcfe1fc0d1"
+    ]
+  },
+  {
+    "@id" : "http://ai4bd.com/resource/data/order/ed0753ca-6153-48d9-98b3-9bb6a1dae5e6",
+    "@type" : "gdm:Order",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "produces" : [
+      "http://ai4bd.com/resource/data/resource/df4c32dc-d0af-4a29-a4e6-886364958389"
+    ],
+    "triggeredBy" : [
+      "http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72"
+    ]
+  }
+]

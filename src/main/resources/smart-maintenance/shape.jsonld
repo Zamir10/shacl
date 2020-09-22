@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://ai4bd.com/resource/data/edm/validation-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "@type": "http://www.w3.org/ns/shacl#NodeShape",
+    "sh:property": {
+      "sh:sparql": {
+        "sh:prefixes": [
+          {
+            "sh:declare": {
+              "sh:prefix": "gdm",
+              "sh:namespace": "http://ai4bd.com/resource/gdm/"
+            },
+            "@id": "http://ai4bd.com/resource/gdm/"
+          },
+          {
+            "sh:declare": {
+              "sh:prefix": "edm",
+              "sh:namespace": "http://ai4bd.com/resource/edm/"
+            },
+            "@id": "http://ai4bd.com/resource/edm/"
+          }
+        ],
+        "sh:select": "\nSELECT $this (avg(?temperature) as ?value)\nWHERE {\n?order edm:triggeredBy $this .\n?order gdm:produces ?resource .\n?resource gdm:contains ?attribute .\n?attribute edm:returnFlowTemperature ?temperature .\n}\nGROUP BY $this\nHAVING (avg(?temperature) > 39.2)\n",
+        "@type": "sh:SPARQLConstraint",
+        "sh:message": "Average temperature should be less than 39.2"
+      },
+      "sh:targetClass": {
+        "@id": "edm:SoftwareAgent"
+      }
+    }
+  }
+]

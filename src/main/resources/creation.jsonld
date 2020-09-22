@@ -1,0 +1,132 @@
+{
+  "shapeGraph": [
+    {
+      "@id" : "http://ai4bd.com/resource/data/edm/inference-shape/977dc2c3-60fd-4817-9a07-3611505118e1",
+      "@type" : "edm:InferenceShape",
+      "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "relatedCreativeWork" : "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+      "rdfs:label" : "Kein Kostenvoranschlag --> Bestellung",
+      "sh:rule" : {
+        "@type" : "sh:SPARQLRule",
+        "sh:condition" : {
+          "sh:and" : {
+            "@list" : [
+              {
+                "@id" : "http://ai4bd.com/resource/data/edm/inference-shape/977dc2c3-60fd-4817-9a07-3611505118e1",
+                "@type" : "http://www.w3.org/ns/shacl#NodeShape",
+                "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+                "relatedCreativeWork" : "http://ai4bd.com/resource/data/document-page/256fad1d-79c4-402c-ae10-ec839b521002",
+                "sh:targetClass" : {
+                  "@id" : "edm:Document"
+                },
+                "rdfs:label" : "Maximum,null",
+                "rdfs:comment" : "kein KV",
+                "sh:path" : {
+                  "@list" : [
+                    {
+                      "@id" : "edm:interpretedContent"
+                    },
+                    {
+                      "@id" : "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMaxCount" : null,
+                "sh:qualifiedMinCount" : 0,
+                "sh:qualifiedValueShape" : {
+                  "sh:in" : {
+                    "@list" : [
+                      "Kostenvoranschlag"
+                    ]
+                  },
+                  "sh:maxCount" : 1,
+                  "sh:minCount" : 1,
+                  "sh:path" : {
+                    "@id" : "http://ai4bd.com/resource/cdm/juzo/boolean/orderType"
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass" : {
+            "@id" : "edm:Document"
+          }
+        },
+        "sh:construct" : "CONSTRUCT {\n\n                ?x edm:interpretedContent ?resource .\n\n                ?resource rdf:type <gdm:GdmResource> .\n?resource gdm:contains ?rA0_0 .\n?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/orderType> \"Bestellung\" .\n?rA0_0 edm:confidence 1 .\n?rA0_0 rdf:type <gdm:GdmResourceAttribute> .\n   ?x ?y ?z .\n\n                ?z ?w ?v.\n\n                ?z ?m ?n .\n\n                ?v ?a ?b .\n\n            }\n\n            WHERE {\n\n                ?x a <http://ai4bd.com/resource/edm/Document> .\n\n                BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\nBIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rA0_0) .\n   ?x ?y ?z .\n\n                OPTIONAL {\n\n                    ?z a <http://ai4bd.com/resource/gdm/GdmResource> .\n\n                    ?z ?w ?v .\n\n                    OPTIONAL {?z ?m ?n }\n\n                    OPTIONAL {?v ?a ?b }\n\n                }\n\n            }",
+        "sh:prefixes" : {
+          "sh:declare" : [
+            {
+              "sh:namespace" : {
+                "@type" : "xsd:anyURI",
+                "@value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix" : "rdf"
+            },
+            {
+              "sh:namespace" : {
+                "@type" : "xsd:anyURI",
+                "@value" : "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix" : "edm"
+            },
+            {
+              "sh:namespace" : {
+                "@type" : "xsd:anyURI",
+                "@value" : "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix" : "gdm"
+            },
+            {
+              "sh:namespace" : {
+                "@type" : "xsd:anyURI",
+                "@value" : "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix" : "juzo-boolean"
+            },
+            {
+              "sh:namespace" : {
+                "@type" : "xsd:anyURI",
+                "@value" : "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix" : "juzo-alpha"
+            },
+            {
+              "sh:namespace" : "http://ai4bd.com/resource/cdm/juzo/numeric/",
+              "sh:prefix" : "juzo-numeric"
+            }
+          ]
+        }
+      },
+      "sh:targetClass" : {
+        "@id" : "edm:Document"
+      }
+    },
+  ],
+  "dataGraph":{
+    "dateCreated" : "2020-03-23T17:57:11.813Z",
+    "@type" : "edm:Document",
+    "@id" : "http://ai4bd.com/resource/data/document/4013bf94-e67f-428c-b168-6fb25716e465",
+    "relatedCreativeWork" : "http://ai4bd.com/resource/data/document/ef3ab160-c872-40e6-bf70-50f985e464e4",
+    "title" : "leg1.png - Page 1",
+    "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "interpretedContent" : [
+      {
+        "@id" : "http://ai4bd.com/resource/data/gdm-resource/a16afe5c-811d-445c-b849-e342354786eb",
+        "@type" : "gdm:GdmResource",
+        "contains" : [
+          {
+            "@id" : "http://ai4bd.com/resource/data/gdm-resource-attribute/c4014586-904f-461d-a642-8cc9a9f3c203",
+            "@type" : "gdm:GdmResourceAttribute",
+            "juzo-boolean:aspitze" : "001",
+            "confidence" : 0.923,
+            "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld"
+          }
+        ],
+        "@context" : "http://models.ai4bd.org/jsonld/edm-context.jsonld"
+      }
+    ],
+    "documentPage" : [
+      "http://ai4bd.com/resource/data/document-page/b71d7d71-f406-4764-826f-5ecf2b7470d1"
+    ]
+  }
+}

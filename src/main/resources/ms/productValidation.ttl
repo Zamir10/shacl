@@ -1,0 +1,28 @@
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edm: <http://ai4bd.com/resource/edm/> .
+@prefix gdm: <http://ai4bd.com/resource/gdm/> .
+@prefix mss: <http://ai4bd.com/resource/cdm/mss/> .
+
+<http://ai4bd.com/resource/product-shape/http://ai4bd.org/data/resource/product-shape/dc54515f-4131-4074-adb7-85347aba2512>
+    a              sh:NodeShape ;
+    sh:targetClass edm:Product ;
+    sh:property    [ sh:path     mss:itemNumber ;
+                     sh:datatype xsd:string ; ] ;
+    sh:property    [ sh:path         mss:company ;
+                     sh:defaultValue "MS" ;
+                     sh:in           ( "MS"
+                                       "MS1"
+                                       "MS2" ) ;
+                     sh:minCount     1 ;
+                     sh:maxCount     1 ;
+                     sh:name         "Company" ; ] ;
+    sh:property    [ sh:path     mss:itemGroup ;
+                     sh:datatype xsd:string ; ] ;
+    sh:property    [ sh:path     mss:materialNumber ;
+                     sh:datatype xsd:string ; ] ;
+    sh:property    [ sh:path     gdm:contains ;
+                     sh:min      1 ;
+                     sh:max      1 ;
+                     sh:datatype xsd:anyURI ;
+                     sh:name     "contains" ; ] .

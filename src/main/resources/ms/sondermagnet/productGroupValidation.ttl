@@ -1,0 +1,90 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix edm:  <http://ai4bd.com/resource/edm/> .
+@prefix gdm:  <http://ai4bd.com/resource/gdm/> .
+@prefix mss:  <http://ai4bd.com/resource/cdm/mss/> .
+
+<http://ai4bd.com/resource/data/edm/validation-shape/57fd8710-7fc2-40da-a5bb-90ce78d2e122>
+    a              sh:NodeShape ;
+    sh:targetClass edm:ProductGroup ;
+    rdfs:label     "Sondermagnet" ;
+    sh:property    [ sh:path     mss:material ;
+                     sh:datatype xsd:string ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "material" ; ] ;
+    sh:property    [ sh:path     mss:specification ;
+                     sh:datatype xsd:string ;
+                     sh:name     "specification" ; ] ;
+    sh:property    [ sh:path     mss:productDesignation ;
+                     sh:datatype xsd:string ;
+                     sh:minCount 1 ;
+                     sh:maxCount 1 ;
+                     sh:name     "productDesignation" ; ] ;
+    sh:property    [ sh:path     mss:dim1 ;
+                     sh:datatype xsd:double ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "dim1" ; ] ;
+    sh:property    [ sh:path     mss:dim1Description ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim1 Description" ; ] ;
+    sh:property    [ sh:path     mss:dim1Tolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim1 Tolerance" ; ] ;
+    sh:property    [ sh:path     mss:dim2 ;
+                     sh:datatype xsd:double ;
+                     sh:min      1 ;
+                     sh:max      1 ;
+                     sh:name     "dim2" ; ] ;
+    sh:property    [ sh:path     mss:dim2Description ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim2 Description" ; ] ;
+    sh:property    [ sh:path     mss:dim2Tolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim2 Tolerance" ; ] ;
+    sh:property    [ sh:path     mss:dim3 ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim3" ; ] ;
+    sh:property    [ sh:path mss:dim3Description ;
+                     sh:name "dim3 Description" ] ;
+    sh:property    [ sh:path     mss:dim3Tolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim3 Tolerance" ; ] ;
+    sh:property    [ sh:path     mss:dim4 ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim4" ; ] ;
+    sh:property    [ sh:path mss:dim4Description ;
+                     sh:name "dim4 Description" ] ;
+    sh:property    [ sh:path     mss:dim4Tolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "dim4 Tolerance" ; ] ;
+    sh:property    [ sh:path     mss:magnetization1 ;
+                     sh:datatype xsd:string ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "magnetization1" ; ] ;
+    sh:property    [ sh:path     mss:magnetization2 ;
+                     sh:datatype xsd:string ;
+                     sh:name     "magnetization2" ; ] ;
+    sh:property    [ sh:path     mss:processing ;
+                     sh:datatype xsd:string ;
+                     sh:name     "processing" ; ] ;
+    sh:property    [ sh:path     mss:miscellaneous ;
+                     sh:datatype xsd:string ;
+                     sh:name     "miscellaneous" ; ] ;
+    sh:property    [ sh:path     mss:toolAvailable ;
+                     sh:datatype xsd:string ;
+                     sh:in       ( "Ja"
+                                   "Nein" ) ;
+                     sh:min      1 ;
+                     sh:max      1 ;
+                     sh:name     "toolAvailable" ; ] ;
+    sh:property    [ sh:path     mss:coating ;
+                     sh:datatype xsd:string ;
+                     sh:name     "coating" ; ] ;
+    sh:property    [ sh:path     [ sh:inversePath gdm:contains ; ] ;
+                     sh:class    edm:Product ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ; ] .

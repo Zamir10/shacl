@@ -1,0 +1,57 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edm: <http://ai4bd.com/resource/edm/> .
+
+<http://ai4bd.com/resource/data/edm/validation-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c>
+    a sh:NodeShape ;
+    sh:targetClass edm:ProductGroup ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/dim1> ;
+        sh:datatype xsd:double ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "Dim1" ;
+    ] ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/magnetization1> ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:name "Magnetization1" ;
+    ] ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/material> ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "Material" ;
+    ] ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/productDesignation> ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:name "Product Designation" ;
+    ] ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/dim2> ;
+        sh:datatype xsd:double ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "Dim2" ;
+    ] ;
+    sh:property [
+        sh:path <http://ai4bd.com/resource/cdm/mss/toolAvailable> ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "Tool Available" ;
+    ] ;
+    sh:property [
+        sh:path [
+            sh:inversePath gdm:contains ;
+        ] ;
+        sh:class edm:Product ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] .

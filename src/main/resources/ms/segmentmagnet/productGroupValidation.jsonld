@@ -1,0 +1,255 @@
+{
+  "@context": {
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "mss": "http://ai4bd.com/resource/cdm/mss",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/b8f90605-55fc-4c33-af92-c9b17ced144f",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "Segmentmagnet",
+      "sh:property": [
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "innerRadiusTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssinnerRadiusTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "wallThicknessTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msswallThciknessTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "innerRadius",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssinnerRadius"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "width",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msswidth"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "coating",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msscoating"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "outerRadius",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssouterRadius"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "specification",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssspecification"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "angleTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssangleTolerance"
+          }
+        },
+        {
+          "sh:class": {
+            "@id": "edm:Product"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:path": {
+            "sh:inversePath": {
+              "@id": "gdm:contains"
+            }
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "productDesignation",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssproductDesignation"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "magnetization2",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssmagnetization2"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "height",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssheight"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "outerRadiusTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssouterRadiusTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "heightTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssheightTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "angle",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssangle"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "widthTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msswidthTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "material",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssmaterial"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:in": {
+            "@list": [
+              "Ja",
+              "Nein"
+            ]
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "toolAvailable",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msstoolAvailable"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "magnetization1",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssmagnetization1"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "wallThickness",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msswallThickness"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "processing",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/mssprocessing"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "length",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msslength"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "lengthTolerance",
+          "sh:path": {
+            "@id": "http://ai4bd.com/resource/cdm/msslengthTolerance"
+          }
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "edm:ProductGroup"
+      }
+    }
+  ]
+}

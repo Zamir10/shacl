@@ -1,0 +1,278 @@
+{
+  "shapeGraph": [
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/inference-shape/1b54726c-c0aa-4e8b-a40b-94bf4fc2802b",
+      "@type": "edm:InferenceShape",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "sh:rule": {
+        "@id": "_:ub1023bL11C13",
+        "@type": "sh:SPARQLRule",
+        "sh:condition": {
+          "@id": "_:ub1023bL13C22",
+          "sh:and": {
+            "@list": [
+              {
+                "@id": "_:ub1023bL16C17",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "@id": "_:ub1023bL19C44",
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "juzo-boolean:farbe"
+                  },
+                  "sh:in": {
+                    "@list": [
+                      "3021"
+                    ]
+                  }
+                }
+              },
+              {
+                "@id": "_:ub1023bL25C17",
+                "sh:path": {
+                  "@list": [
+                    {
+                      "@id": "edm:interpretedContent"
+                    },
+                    {
+                      "@id": "gdm:contains"
+                    }
+                  ]
+                },
+                "sh:qualifiedMinCount": 1,
+                "sh:qualifiedValueShape": {
+                  "@id": "_:ub1023bL28C44",
+                  "sh:minCount": 1,
+                  "sh:path": {
+                    "@id": "juzo-boolean:batik"
+                  },
+                  "sh:in": {
+                    "@list": [
+                      "black"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "sh:targetClass": {
+            "@id": "edm:Document"
+          }
+        },
+        "sh:construct": "CONSTRUCT {\n    ?x          edm:interpretedContent  ?resource .\n    ?resource   rdf:type                <gdm:GdmResource> .\n    ?resource   gdm:contains            ?rAID .\n    ?rAID       juzo-boolean:farbe      \"3021+black\" .\n    ?rAID       edm:confidence          \"1.0\" .\n    ?rAID       rdf:type                <gdm:GdmResourceAttribute> .\n\n    ?x ?y ?z .\n    ?z ?w ?v.\n    ?z ?m ?n .\n    ?v ?a ?b .\n}\nWHERE {\n    #-- we know, it is a document and we get all properties\n\t?x a <http://ai4bd.com/resource/edm/Document>.\n\n    BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource/\",STRUUID())) as ?resource) .\n    BIND(URI(CONCAT(\"http://ai4bd.com/resource/data/gdm-resource-attribute/\",STRUUID())) as ?rAID) .\n\n    ?x ?y ?z .\n\tOPTIONAL {\n\t\t#-- get the interpreted content\n\t\t?z ?w ?v .\n\t\t#-- and if there are some properties\n        OPTIONAL {?z ?m ?n }\n\t\t#-- get the content of the resource attributes\n\t\tOPTIONAL {?v ?a ?b }\n\t\t#-- executed first: get all resource attributes but filter the unwanted\n\t\t{\n\t\t SELECT  ?v WHERE {\n\t\t\t   ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .\n\t\t\t   #-- this filter the complete not if it matched a basic graph pattern\n               FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> \"black\" }\n               FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> \"3021\" }\n\t\t  }\n\t\t}\n\t}\n}",
+        "sh:prefixes": {
+          "@id": "_:ub1023bL81C21",
+          "sh:declare": [
+            {
+              "@id": "_:ub1023bL90C12",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/boolean/"
+              },
+              "sh:prefix": "juzo-boolean"
+            },
+            {
+              "@id": "_:ub1023bL81C34",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              },
+              "sh:prefix": "rdf"
+            },
+            {
+              "@id": "_:ub1023bL93C12",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/alpha/"
+              },
+              "sh:prefix": "juzo-alpha"
+            },
+            {
+              "@id": "_:ub1023bL96C12",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/cdm/juzo/numeric/"
+              },
+              "sh:prefix": "juzo-numeric"
+            },
+            {
+              "@id": "_:ub1023bL87C12",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/gdm/"
+              },
+              "sh:prefix": "gdm"
+            },
+            {
+              "@id": "_:ub1023bL84C12",
+              "sh:namespace": {
+                "@type": "xsd:anyURI",
+                "@value": "http://ai4bd.com/resource/edm/"
+              },
+              "sh:prefix": "edm"
+            }
+          ]
+        }
+      },
+      "sh:targetClass": {
+        "@id": "edm:Document"
+      }
+    }
+  ],
+  "dataGraph": {
+    "dateCreated": "2019-10-13T17:44:01.353Z",
+    "@type": "edm:Document",
+    "@id": "http://ai4bd.com/resource/data/document/7fb1bd6c-ddc7-4369-a292-68042d30b158",
+    "relatedCreativeWork": "http://ai4bd.com/resource/data/document/eeeb2964-3140-4fc3-a962-13658235670f",
+    "title": "a-real-test7.png - Page 1",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "interpretedContent": [
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-1",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "juzo-boolean:batik": "black",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-1",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:farbe": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-2",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      },
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-2",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "juzo-numeric:lal": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lbl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lcl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ldl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:einbeinstrumpfhose": "",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      }
+    ],
+    "documentPage": [
+      "http://ai4bd.com/resource/data/document-page/7c331353-5a14-4631-9628-9696b7a020cd"
+    ]
+  },
+  "modifiedGraph": {
+    "dateCreated": "2019-10-13T17:44:01.353Z",
+    "@type": "edm:Document",
+    "@id": "http://ai4bd.com/resource/data/document/7fb1bd6c-ddc7-4369-a292-68042d30b158",
+    "relatedCreativeWork": "http://ai4bd.com/resource/data/document/eeeb2964-3140-4fc3-a962-13658235670f",
+    "title": "a-real-test7.png - Page 1",
+    "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+    "interpretedContent": [
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-1",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+
+          {
+            "juzo-boolean:farbe": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-2",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      },
+      {
+        "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-2",
+        "@type": "gdm:GdmResource",
+        "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+        "contains": [
+          {
+            "juzo-numeric:lal": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lbl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:lcl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-numeric:ldl": "3021",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          },
+          {
+            "juzo-boolean:einbeinstrumpfhose": "",
+            "confidence": 1.0,
+            "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5",
+            "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+            "@type": "gdm:GdmResourceAttribute"
+          }
+        ]
+      }
+    ],
+    "documentPage": [
+      "http://ai4bd.com/resource/data/document-page/7c331353-5a14-4631-9628-9696b7a020cd"
+    ]
+  }
+}

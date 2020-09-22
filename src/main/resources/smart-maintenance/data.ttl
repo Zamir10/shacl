@@ -1,0 +1,85 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix juzo-boolean: <http://ai4bd.com/resource/cdm/juzo/boolean/> .
+@prefix edm:   <http://ai4bd.com/resource/edm/> .
+@prefix gold:  <http://purl.org/linguistics/gold/> .
+@prefix gdm:   <http://ai4bd.com/resource/gdm/> .
+@prefix caq:   <http://ai4bd.com/resource/ddm/caq/> .
+@prefix bauerfeind-numeric: <http://ai4bd.com/resource/cdm/bauerfeind/numeric/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix juzo-alpha: <http://ai4bd.com/resource/cdm/juzo/alpha/> .
+@prefix juzo-numeric: <http://ai4bd.com/resource/cdm/juzo/numeric/> .
+@prefix bauerfeind-alpha: <http://ai4bd.com/resource/cdm/bauerfeind/alpha/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix csvw:  <http://www.w3.org/ns/csvw#> .
+@prefix kbpedia: <http://kbpedia.org/kko/rc/> .
+@prefix bauerfeind-boolean: <http://ai4bd.com/resource/cdm/bauerfeind/boolean/> .
+
+<http://ai4bd.com/resource/data/order/9ba74dda-250a-406c-bac4-6d6bda0e4489>
+    a                gdm:Order ;
+    edm:triggeredBy  <http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72> ;
+    gdm:produces     <http://ai4bd.com/resource/data/resource/c7638619-2cec-4230-9766-a5f320fa4005> .
+
+<http://ai4bd.com/resource/data/resource/da41b97a-f31f-467e-afa2-696b9063f845>
+    a                gdm:Resource ;
+    edm:agent        <http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879> ;
+    edm:dateCreated  "2020-07-15T13:09:51+02:00"^^xsd:dateTime ;
+    edm:happensAt    <http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5> , <http://ai4bd.com/resource/data/place/53152887-81c1-4ce7-928d-d0070cc5ef44> ;
+    gdm:contains     <http://ai4bd.com/resource/data/resource-attribute/c06b4a53-8719-40f4-85c5-76add08c777b> .
+
+<http://ai4bd.com/resource/data/resource-attribute/8d2beef5-488a-431a-9ec5-9afcfe1fc0d1>
+    a                          gdm:ResourceAttribute ;
+    edm:confidence             1.0 ;
+    edm:returnFlowTemperature  35.6 ;
+    <http://www.qudt.org/2.1/schema/qudt#unit>
+                               <http://qudt.org/vocab/unit/DEG_C> .
+
+<http://ai4bd.com/resource/data/order/4d27c89f-cc45-401e-a984-45fc0de64be7>
+    a                gdm:Order ;
+    edm:triggeredBy  <http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72> ;
+    gdm:produces     <http://ai4bd.com/resource/data/resource/bd4ec0f8-c2db-4209-8ec9-2c21647c28b6> .
+
+<http://ai4bd.com/resource/data/resource/c7638619-2cec-4230-9766-a5f320fa4005>
+    a                gdm:Resource ;
+    edm:agent        <http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879> ;
+    edm:dateCreated  "2020-07-15T13:11:56+02:00"^^xsd:dateTime ;
+    edm:happensAt    <http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5> , <http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2> ;
+    gdm:contains     <http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f> .
+
+<http://ai4bd.com/resource/data/order/8608b8a2-b96f-49fc-bd84-f5a3f7f3f289>
+    a                gdm:Order ;
+    edm:triggeredBy  <http://ai4bd.com/resource/data/software-agent/5eafeff2-ba40-4b5a-b573-1d656f028a88> ;
+    gdm:produces     <http://ai4bd.com/resource/data/resource/da41b97a-f31f-467e-afa2-696b9063f845> .
+
+<http://ai4bd.com/resource/data/software-agent/5eafeff2-ba40-4b5a-b573-1d656f028a88>
+    a           edm:SoftwareAgent ;
+    rdfs:label  "Temperature Sensor 4" .
+
+<http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f>
+    a                          gdm:ResourceAttribute ;
+    edm:confidence             1.0 ;
+    edm:returnFlowTemperature  42.1 ;
+    <http://www.qudt.org/2.1/schema/qudt#unit>
+                               <http://qudt.org/vocab/unit/DEG_C> .
+
+<http://ai4bd.com/resource/data/resource/bd4ec0f8-c2db-4209-8ec9-2c21647c28b6>
+    a                gdm:Resource ;
+    edm:agent        <http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879> ;
+    edm:dateCreated  "2020-07-15T13:12:32+02:00"^^xsd:dateTime ;
+    edm:happensAt    <http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5> , <http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2> ;
+    gdm:contains     <http://ai4bd.com/resource/data/resource-attribute/3e9e6180-603c-45a1-ad04-431bd8405b8f> .
+
+<http://ai4bd.com/resource/data/resource-attribute/c06b4a53-8719-40f4-85c5-76add08c777b>
+    a                          gdm:ResourceAttribute ;
+    edm:confidence             1.0 ;
+    edm:returnFlowTemperature  39.2 ;
+    <http://www.qudt.org/2.1/schema/qudt#unit>
+                               <http://qudt.org/vocab/unit/DEG_C> .
+
+<http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72>
+    a           edm:SoftwareAgent ;
+    rdfs:label  "Binary Sensor 1" .

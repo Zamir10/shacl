@@ -1,0 +1,224 @@
+{
+  "@context": {
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "mss": "http://ai4bd.com/resource/cdm/mss/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/product-group-shape/7f114597-5215-4e62-b37e-e6630c5a25e1",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "Kunststoffartikel",
+      "sh:property": [
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim3Tolerance",
+          "sh:path": {
+            "@id": "mss:dim3Tolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "dim2",
+          "sh:path": {
+            "@id": "mss:dim2"
+          }
+        },
+        {
+          "sh:class": {
+            "@id": "edm:Product"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:path": {
+            "sh:inversePath": {
+              "@id": "gdm:contains"
+            }
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "processing",
+          "sh:path": {
+            "@id": "mss:processing"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim2Tolerance",
+          "sh:path": {
+            "@id": "mss:dim2Tolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim3",
+          "sh:path": {
+            "@id": "mss:dim3"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "dim1",
+          "sh:path": {
+            "@id": "mss:dim1"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:in": {
+            "@list": [
+              "Ja",
+              "Nein"
+            ]
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "toolAvailable",
+          "sh:path": {
+            "@id": "mss:toolAvailable"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "dim4",
+          "sh:path": {
+            "@id": "mss:dim4"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "material",
+          "sh:path": {
+            "@id": "mss:material"
+          }
+        },
+        {
+          "sh:name": "dim4Description",
+          "sh:path": {
+            "@id": "mss:dim4Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim1Description",
+          "sh:path": {
+            "@id": "mss:dim1Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "dim5",
+          "sh:path": {
+            "@id": "mss:dim5"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim2Description",
+          "sh:path": {
+            "@id": "mss:dim2Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim4Tolerance",
+          "sh:path": {
+            "@id": "mss:dim4Tolerance"
+          }
+        },
+        {
+          "sh:name": "dim3Description",
+          "sh:path": {
+            "@id": "mss:dim3Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim5Tolerance",
+          "sh:path": {
+            "@id": "mss:dim5Tolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "specification",
+          "sh:path": {
+            "@id": "mss:specification"
+          }
+        },
+        {
+          "sh:name": "dim5Description",
+          "sh:path": {
+            "@id": "mss:dim5Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "miscellaneous",
+          "sh:path": {
+            "@id": "mss:miscellaneous"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim1Tolerance",
+          "sh:path": {
+            "@id": "mss:dim1Tolerance"
+          }
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "edm:ProductGroup"
+      }
+    }
+  ]
+}

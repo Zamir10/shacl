@@ -1,0 +1,120 @@
+{
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/data/document/7fb1bd6c-ddc7-4369-a292-68042d30b158",
+      "@type": "http://ai4bd.com/resource/edm/Document",
+      "dateCreated": "2019-10-13T17:44:01.353Z",
+      "documentPage": "http://ai4bd.com/resource/data/document-page/7c331353-5a14-4631-9628-9696b7a020cd",
+      "interpretedContent": [
+        "http://ai4bd.com/resource/data/gdm-resource/resource-1",
+        "http://ai4bd.com/resource/data/gdm-resource/resource-2",
+        "http://ai4bd.com/resource/data/gdm-resource/26b418f7-c8fe-44f6-9558-15a94a31c34f"
+      ],
+      "relatedCreativeWork": "http://ai4bd.com/resource/data/document/eeeb2964-3140-4fc3-a962-13658235670f",
+      "title": "a-real-test7.png - Page 1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/7eb58391-2e7d-463d-8cac-06733066d58e",
+      "@type": "gdm:GdmResourceAttribute",
+      "farbe": "3021+black",
+      "http://ai4bd.com/resource/edm/confidence": "1.0"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResourceAttribute",
+      "lal": "3021",
+      "confidence": "1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResourceAttribute",
+      "lbl": "3021",
+      "confidence": "1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResourceAttribute",
+      "lcl": "3021",
+      "confidence": "1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResourceAttribute",
+      "ldl": "3021",
+      "confidence": "1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResourceAttribute",
+      "einbeinstrumpfhose": "",
+      "confidence": "1"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource/26b418f7-c8fe-44f6-9558-15a94a31c34f",
+      "@type": "gdm:GdmResource",
+      "contains": "http://ai4bd.com/resource/data/gdm-resource-attribute/7eb58391-2e7d-463d-8cac-06733066d58e"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-2",
+      "@type": "http://ai4bd.com/resource/gdm/GdmResource",
+      "contains": [
+        "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1",
+        "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2",
+        "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3",
+        "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4",
+        "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5"
+      ]
+    }
+  ],
+  "@context": {
+    "contains": {
+      "@id": "http://ai4bd.com/resource/gdm/contains",
+      "@type": "@id"
+    },
+    "lcl": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/lcl"
+    },
+    "confidence": {
+      "@id": "http://ai4bd.com/resource/edm/confidence",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "lal": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/lal"
+    },
+    "dateCreated": {
+      "@id": "http://ai4bd.com/resource/edm/dateCreated",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "documentPage": {
+      "@id": "http://ai4bd.com/resource/edm/documentPage",
+      "@type": "@id"
+    },
+    "interpretedContent": {
+      "@id": "http://ai4bd.com/resource/edm/interpretedContent",
+      "@type": "@id"
+    },
+    "relatedCreativeWork": {
+      "@id": "http://ai4bd.com/resource/edm/relatedCreativeWork",
+      "@type": "@id"
+    },
+    "title": {
+      "@id": "http://ai4bd.com/resource/edm/title"
+    },
+    "ldl": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/ldl"
+    },
+    "farbe": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/farbe"
+    },
+    "lbl": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/numeric/lbl"
+    },
+    "einbeinstrumpfhose": {
+      "@id": "http://ai4bd.com/resource/cdm/juzo/boolean/einbeinstrumpfhose"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

@@ -1,0 +1,39 @@
+CONSTRUCT {
+    ?x          edm:interpretedContent  ?resource .
+    ?resource   rdf:type                <gdm:GdmResource> .
+    ?resource   gdm:contains            ?rAID .
+    ?rAID       juzo-boolean:farbe      "3021+black" .
+    ?rAID       edm:confidence          "1.0" .
+    ?rAID       rdf:type                <gdm:GdmResourceAttribute> .
+
+    ?x ?y ?z .
+    ?z ?w ?v.
+    ?z ?m ?n .
+    ?v ?a ?b .
+}
+WHERE {
+    #-- we know, it is a document and we get all properties
+	?x a <http://ai4bd.com/resource/edm/Document>.
+
+    BIND(URI(CONCAT("http://ai4bd.com/resource/data/gdm-resource/",STRUUID())) as ?resource) .
+    BIND(URI(CONCAT("http://ai4bd.com/resource/data/gdm-resource-attribute/",STRUUID())) as ?rAID) .
+
+    ?x ?y ?z .
+	OPTIONAL {
+		#-- get the interpreted content
+		?z ?w ?v .
+		#-- and if there are some properties
+        OPTIONAL {?z ?m ?n }
+		#-- get the content of the resource attributes
+		OPTIONAL {?v ?a ?b }
+		#-- executed first: get all resource attributes but filter the unwanted
+		{
+		 SELECT  ?v WHERE {
+			   ?v a <http://ai4bd.com/resource/gdm/GdmResourceAttribute> .
+			   #-- this filter the complete not if it matched a basic graph pattern
+               FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/batik> "black" }
+               FILTER NOT EXISTS { ?v <http://ai4bd.com/resource/cdm/juzo/boolean/farbe> "3021" }
+		  }
+		}
+	}
+}

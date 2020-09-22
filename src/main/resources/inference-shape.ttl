@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix ex:   <http://example.org/ns#> .
+
+ex:RectangleRulesShape
+    a              sh:NodeShape ;
+    sh:targetClass ex:Rectangle ;
+    sh:rule        [ a            sh:SPARQLRule ;
+                     sh:prefixes  ex: ;
+                     sh:construct """
+                        PREFIX ex: <http://example.org/ns#>
+                        CONSTRUCT {
+                            $this ex:area ?area .
+                        }
+                        WHERE {
+                            $this ex:width ?width .
+                            $this ex:height ?height .
+                            BIND (2 * (?width + ?height) AS ?perimeter) .
+                        }
+                        """ ;
+                     sh:condition ex:RectangleShape ; ] .   # Rule only applies to Rectangles that conform to ex:RectangleShape

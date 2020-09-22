@@ -1,0 +1,12 @@
+PREFIX gdm: <http://ai4bd.com/resource/gdm/>
+PREFIX edm: <http://ai4bd.com/resource/edm/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT $this (sum(?temp) as ?sum)
+WHERE {
+  ?order edm:triggeredBy $targetNode .
+  ?order gdm:produces ?resource .
+  ?resource gdm:contains ?resAtt .
+  ?resAtt edm:returnFlowTemperature ?temp .
+}
+GROUP BY ?this
+HAVING ((?sum) > 40)

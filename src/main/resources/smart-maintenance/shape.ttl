@@ -1,0 +1,44 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm:   <http://ai4bd.com/resource/edm/> .
+@prefix gdm:   <http://ai4bd.com/resource/gdm/> .
+
+edm: sh:declare [
+    sh:prefix "edm" ;
+    sh:namespace "http://ai4bd.com/resource/edm/" ;
+] .
+
+gdm: sh:declare [
+    sh:prefix "gdm" ;
+    sh:namespace "http://ai4bd.com/resource/gdm/" ;
+] .
+
+rdf: sh:declare [
+    sh:prefix "rdf" ;
+    sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
+] .
+
+<http://ai4bd.com/resource/data/edm/validation-shape/508ba9e0-1cd9-4604-ae5c-c5a60296096c>
+    a sh:NodeShape ;
+    sh:targetClass edm:SoftwareAgent ;
+    sh:property [
+        sh:severity sh:Warning ;
+        sh:sparql [
+            a sh:SPARQLConstraint ;
+            sh:message "Average temperature should be less than 39.2" ;
+            sh:prefixes gdm: ;
+            sh:prefixes edm: ;
+            sh:select """
+                SELECT $this (avg(?temperature) as ?value)
+                WHERE {
+                    ?order edm:triggeredBy $this .
+                    ?order gdm:produces ?resource .
+                    ?resource gdm:contains ?attribute .
+                    ?attribute edm:returnFlowTemperature ?temperature .
+                }
+                    GROUP BY $this
+                    HAVING (avg(?temperature) > 39.2)
+            """
+        ]
+    ] .

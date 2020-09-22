@@ -1,0 +1,225 @@
+{
+  "@context": {
+    "relatedCreativeWork": {
+      "@id": "http://ai4bd.com/resource/edm/relatedCreativeWork",
+      "@type": "@id"
+    },
+    "interpretedContent": {
+      "@id": "http://ai4bd.com/resource/edm/interpretedContent",
+      "@type": "@id"
+    },
+    "relatedViolatedShape": {
+      "@id": "http://ai4bd.com/resource/edm/relatedViolatedShape",
+      "@type": "@id"
+    },
+    "relatedValidationShape": {
+      "@id": "http://ai4bd.com/resource/edm/relatedValidationShape",
+      "@type": "@id"
+    },
+    "dateModified": {
+      "@id": "http://ai4bd.com/resource/edm/dateModified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "dateCreated": {
+      "@id": "http://ai4bd.com/resource/edm/dateCreated",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "pageNumber": {
+      "@id": "http://ai4bd.com/resource/edm/pageNumber",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "text": {
+      "@id": "http://ai4bd.com/resource/edm/text"
+    },
+    "filename": {
+      "@id": "http://ai4bd.com/resource/edm/filename"
+    },
+    "storageId": {
+      "@id": "http://ai4bd.com/resource/edm/storageId"
+    },
+    "aisId": {
+      "@id": "http://ai4bd.com/resource/edm/aisId"
+    },
+    "language": {
+      "@id": "http://ai4bd.com/resource/edm/language"
+    },
+    "confidence": {
+      "@id": "http://ai4bd.com/resource/edm/confidence",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "annotationOrigin": {
+      "@id": "http://ai4bd.com/resource/edm/annotationOrigin",
+      "@type": "@id"
+    },
+    "useModel": {
+      "@id": "http://ai4bd.com/resource/edm/useModel"
+    },
+    "annotationEnd": {
+      "@id": "http://ai4bd.com/resource/edm/annotationEnd",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "entityConfidence": {
+      "@id": "http://ai4bd.com/resource/edm/entityConfidence",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "annotationStart": {
+      "@id": "http://ai4bd.com/resource/edm/annotationStart",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "useService": {
+      "@id": "http://ai4bd.com/resource/gdm/useService",
+      "@type": "@id"
+    },
+    "externalId": {
+      "@id": "http://ai4bd.com/resource/edm/externalId"
+    },
+    "disambiguationConfidence": {
+      "@id": "http://ai4bd.com/resource/edm/disambiguationConfidence",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "returnFlowTemperature": {
+      "@id": "http://ai4bd.com/resource/edm/returnFlowTemperature",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "entity": {
+      "@id": "http://ai4bd.com/resource/edm/entity",
+      "@type": "@id"
+    },
+    "intersectionWith": {
+      "@id": "http://ai4bd.com/resource/gdm/intersectionWith",
+      "@type": "@id"
+    },
+    "title": {
+      "@id": "http://ai4bd.com/resource/edm/title"
+    },
+    "versionInfo": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "softwareRelease": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/softwareRelease"
+    },
+    "softwareModule": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/softwareModule"
+    },
+    "accountId": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/accountId"
+    },
+    "workTime": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/workTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ticketNumber": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/ticketNumber"
+    },
+    "ticketOrigin": {
+      "@id": "http://ai4bd.com/resource/ddm/caq/ticketOrigin"
+    },
+    "sourceEntity": {
+      "@id": "http://ai4bd.com/resource/edm/sourceEntity",
+      "@type": "@id"
+    },
+    "targetEntity": {
+      "@id": "http://ai4bd.com/resource/edm/targetEntity",
+      "@type": "@id"
+    },
+    "positiveSentiment": {
+      "@id": "http://ai4bd.com/resource/edm/positiveSentiment",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "negativeSentiment": {
+      "@id": "http://ai4bd.com/resource/edm/negativeSentiment",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "documentPage": {
+      "@id": "http://ai4bd.com/resource/edm/documentPage",
+      "@type": "@id"
+    },
+    "subPropertyOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type": "@id"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "domain": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type": "@id"
+    },
+    "comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "subClassOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type": "@id"
+    },
+    "rest": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type": "@id"
+    },
+    "first": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type": "@id"
+    },
+    "unionOf": {
+      "@id": "http://www.w3.org/2002/07/owl#unionOf",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type": "@id"
+    },
+    "oneOf": {
+      "@id": "http://www.w3.org/2002/07/owl#oneOf",
+      "@type": "@id"
+    },
+    "equivalentClass": {
+      "@id": "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type": "@id"
+    },
+    "disjointWith": {
+      "@id": "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type": "@id"
+    },
+    "contains": {
+      "@id": "http://ai4bd.com/resource/gdm/contains",
+      "@type": "@id"
+    },
+    "versionIRI": {
+      "@id": "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type": "@id"
+    },
+    "imports": {
+      "@id": "http://www.w3.org/2002/07/owl#imports",
+      "@type": "@id"
+    },
+    "unit": {
+      "@id": "http://www.qudt.org/2.1/schema/qudt#unit",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "@vocab": "http://ai4bd.com/resource/graph/example/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "org": "http://www.w3.org/ns/org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gold": "http://purl.org/linguistics/gold/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "caq": "http://ai4bd.com/resource/ddm/caq/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "kbpedia": "http://kbpedia.org/kko/rc/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "juzo-boolean": "http://ai4bd.com/resource/cdm/juzo/boolean/",
+    "juzo-numeric": "http://ai4bd.com/resource/cdm/juzo/numeric/",
+    "juzo-alpha": "http://ai4bd.com/resource/cdm/juzo/alpha/",
+    "bauerfeind-boolean": "http://ai4bd.com/resource/cdm/bauerfeind/boolean/",
+    "bauerfeind-numeric": "http://ai4bd.com/resource/cdm/bauerfeind/numeric/",
+    "bauerfeind-alpha": "http://ai4bd.com/resource/cdm/bauerfeind/alpha/"
+  }
+}

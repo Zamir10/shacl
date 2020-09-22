@@ -1,0 +1,208 @@
+{
+  "@context": {
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "mss": "http://ai4bd.com/resource/cdm/mss/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/product-group-shape/9aea323a-dc95-4f7b-885f-c072700ffc70",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "Flachenmagnetsystem",
+      "sh:property": [
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "dim2",
+          "sh:path": {
+            "@id": "mss:dim2"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "productDesignation",
+          "sh:path": {
+            "@id": "mss:productDesignation"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "coating",
+          "sh:path": {
+            "@id": "mss:coating"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "magnetization2",
+          "sh:path": {
+            "@id": "mss:magnetization2"
+          }
+        },
+        {
+          "sh:class": {
+            "@id": "edm:Product"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:path": {
+            "sh:inversePath": {
+              "@id": "gdm:contains"
+            }
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim1 Description",
+          "sh:path": {
+            "@id": "mss:dim1Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "magnetization1",
+          "sh:path": {
+            "@id": "mss:magnetization1"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim1 Tolerance",
+          "sh:path": {
+            "@id": "mss:dim1Tolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "processing",
+          "sh:path": {
+            "@id": "mss:processing"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim2 Tolerance",
+          "sh:path": {
+            "@id": "mss:dim2Tolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "heightTolerance",
+          "sh:path": {
+            "@id": "mss:heightTolerance"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:name": "dim2 Description",
+          "sh:path": {
+            "@id": "mss:dim2Description"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "specification",
+          "sh:path": {
+            "@id": "mss:specification"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "material",
+          "sh:path": {
+            "@id": "mss:material"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "dim1",
+          "sh:path": {
+            "@id": "mss:dim1"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:name": "miscellaneous",
+          "sh:path": {
+            "@id": "mss:miscellaneous"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:string"
+          },
+          "sh:in": {
+            "@list": [
+              "Ja",
+              "Nein"
+            ]
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "toolAvailable",
+          "sh:path": {
+            "@id": "mss:toolAvailable"
+          }
+        },
+        {
+          "sh:datatype": {
+            "@id": "xsd:double"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "height",
+          "sh:path": {
+            "@id": "mss:height"
+          }
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "edm:ProductGroup"
+      }
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+ - replace all @id with nothing
+    "@id": .*,
+
+ - remove space and space and Big letter
+   (sh:name\s+")([A-Z]+)(\s)
+   $1\l$2
+
+ - replace all big first letters to the small one
+   (sh:name\s+")([A-Z])
+   $1\l$2
+
+ - remove hyphen from name
+   (sh:name\s+")([a-z]+)(-)
+   $1\l$2

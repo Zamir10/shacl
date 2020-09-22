@@ -1,0 +1,285 @@
+{
+  "@context": {
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "mss/": "http://ai4bd.com/resource/cdm/mss/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:ub35bL53C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Magnetization-1",
+      "sh:path": {
+        "@id": "mss:magnetization1"
+      }
+    },
+    {
+      "@id": "_:ub35bL61C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:name": "Processing",
+      "sh:path": {
+        "@id": "mss:processing"
+      }
+    },
+    {
+      "@id": "_:ub35bL74C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:name": "Coating",
+      "sh:path": {
+        "@id": "mss:coating"
+      }
+    },
+    {
+      "@id": "_:ub35bL26C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:name": "Length Tolerance",
+      "sh:path": {
+        "@id": "mss:lengthTolerance"
+      }
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/edm/validation-shape/geberringsystem",
+      "@type": "sh:NodeShape",
+      "sh:property": [
+        {
+          "@id": "_:ub35bL8C20"
+        },
+        {
+          "@id": "_:ub35bL61C20"
+        },
+        {
+          "@id": "_:ub35bL50C20"
+        },
+        {
+          "@id": "_:ub35bL29C20"
+        },
+        {
+          "@id": "_:ub35bL26C20"
+        },
+        {
+          "@id": "_:ub35bL16C20"
+        },
+        {
+          "@id": "_:ub35bL64C20"
+        },
+        {
+          "@id": "_:ub35bL77C20"
+        },
+        {
+          "@id": "_:ub35bL34C20"
+        },
+        {
+          "@id": "_:ub35bL67C20"
+        },
+        {
+          "@id": "_:ub35bL37C20"
+        },
+        {
+          "@id": "_:ub35bL21C20"
+        },
+        {
+          "@id": "_:ub35bL58C20"
+        },
+        {
+          "@id": "_:ub35bL53C20"
+        },
+        {
+          "@id": "_:ub35bL42C20"
+        },
+        {
+          "@id": "_:ub35bL13C20"
+        },
+        {
+          "@id": "_:ub35bL45C20"
+        },
+        {
+          "@id": "_:ub35bL74C20"
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "edm:ProductGroup"
+      }
+    },
+    {
+      "@id": "_:ub35bL64C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:name": "Miscallenous",
+      "sh:path": {
+        "@id": "mss:miscallenous"
+      }
+    },
+    {
+      "@id": "_:ub35bL67C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:in": {
+        "@list": [
+          "Ja",
+          "Nein"
+        ]
+      },
+      "sh:max": 1,
+      "sh:min": 1,
+      "sh:name": "Tool available",
+      "sh:path": {
+        "@id": "mss:toolAvailable"
+      }
+    },
+    {
+      "@id": "_:ub35bL58C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:name": "Magnetization-2",
+      "sh:path": {
+        "@id": "mss:magnetization2"
+      }
+    },
+    {
+      "@id": "_:ub35bL45C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Air Gap",
+      "sh:path": {
+        "@id": "mss:airGap"
+      }
+    },
+    {
+      "@id": "_:ub35bL50C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:name": "Air Gap Tolerance",
+      "sh:path": {
+        "@id": "mss:airGapTolerance"
+      }
+    },
+    {
+      "@id": "_:ub35bL8C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Material",
+      "sh:path": {
+        "@id": "mss:material"
+      }
+    },
+    {
+      "@id": "_:ub35bL77C20",
+      "sh:class": {
+        "@id": "edm:Product"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:path": {
+        "@id": "_:ub35bL77C34"
+      }
+    },
+    {
+      "@id": "_:ub35bL13C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:name": "Specification",
+      "sh:path": {
+        "@id": "mss:specification"
+      }
+    },
+    {
+      "@id": "_:ub35bL77C34",
+      "sh:inversePath": {
+        "@id": "gdm:contains"
+      }
+    },
+    {
+      "@id": "_:ub35bL16C20",
+      "sh:datatype": {
+        "@id": "xsd:string"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Product Designation",
+      "sh:path": {
+        "@id": "mss:productDesignation"
+      }
+    },
+    {
+      "@id": "_:ub35bL42C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:name": "Height Tolerance",
+      "sh:path": {
+        "@id": "mss:heightTolerance"
+      }
+    },
+    {
+      "@id": "_:ub35bL21C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Length",
+      "sh:path": {
+        "@id": "mss:length"
+      }
+    },
+    {
+      "@id": "_:ub35bL29C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Width",
+      "sh:path": {
+        "@id": "mss:width"
+      }
+    },
+    {
+      "@id": "_:ub35bL37C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:maxCount": 1,
+      "sh:minCount": 1,
+      "sh:name": "Height",
+      "sh:path": {
+        "@id": "mss:height"
+      }
+    },
+    {
+      "@id": "_:ub35bL34C20",
+      "sh:datatype": {
+        "@id": "xsd:double"
+      },
+      "sh:name": "Width Tolerance",
+      "sh:path": {
+        "@id": "mss:widthTolerance"
+      }
+    }
+  ]
+}

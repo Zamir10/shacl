@@ -1,0 +1,77 @@
+@base                 <http://example.org/random> .
+@prefix schema:       <http://schema.org/> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix org:          <http://www.w3.org/ns/org#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix juzo-boolean: <http://ai4bd.com/resource/cdm/juzo/boolean/> .
+@prefix edm:          <http://ai4bd.com/resource/edm/> .
+@prefix gold:         <http://purl.org/linguistics/gold/> .
+@prefix gdm:          <http://ai4bd.com/resource/gdm/> .
+@prefix caq:          <http://ai4bd.com/resource/ddm/caq/> .
+@prefix sh:           <http://www.w3.org/ns/shacl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix juzo-alpha:   <http://ai4bd.com/resource/cdm/juzo/alpha/> .
+@prefix juzo-numeric: <http://ai4bd.com/resource/cdm/juzo/numeric/> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix kbpedia:      <http://kbpedia.org/kko/rc/> .
+@prefix csvw:         <http://www.w3.org/ns/csvw#> .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3>
+    a                gdm:GdmResourceAttribute ;
+    juzo-numeric:lcl "3021" ;
+    edm:confidence   "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-2>
+    a                  gdm:GdmResourceAttribute ;
+    juzo-boolean:farbe "3021" ;
+    edm:confidence     "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/gdm-resource/resource-1>
+    a            gdm:GdmResource ;
+    gdm:contains <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-1>,
+                 <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-2> .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1>
+    a                gdm:GdmResourceAttribute ;
+    juzo-numeric:lal "3021" ;
+    edm:confidence   "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/document/7fb1bd6c-ddc7-4369-a292-68042d30b158>
+    a                      edm:Document ;
+    edm:dateCreated        "2019-10-13T17:44:01.353Z"^^xsd:dateTime ;
+    edm:documentPage
+                           <http://ai4bd.com/resource/data/document-page/7c331353-5a14-4631-9628-9696b7a020cd> ;
+    edm:interpretedContent <http://ai4bd.com/resource/data/gdm-resource/resource-1>,
+                           <http://ai4bd.com/resource/data/gdm-resource/resource-2> ;
+    edm:relatedCreativeWork
+                           <http://ai4bd.com/resource/data/document/eeeb2964-3140-4fc3-a962-13658235670f> ;
+    edm:title              "a-real-test7.png - Page 1" .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4>
+    a                gdm:GdmResourceAttribute ;
+    juzo-numeric:ldl "3021" ;
+    edm:confidence   "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-1>
+    a                  gdm:GdmResourceAttribute ;
+    juzo-boolean:batik "black" ;
+    edm:confidence     "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/gdm-resource/resource-2>
+    a            gdm:GdmResource ;
+    gdm:contains <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1>,
+                 <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2>,
+                 <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3>,
+                 <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4>,
+                 <http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5> .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2>
+    a                gdm:GdmResourceAttribute ;
+    juzo-numeric:lbl "3021" ;
+    edm:confidence   "1"^^xsd:decimal .
+
+<http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5>
+    a                               gdm:GdmResourceAttribute ;
+    juzo-boolean:einbeinstrumpfhose "" ;
+    edm:confidence                  "1"^^xsd:decimal .

@@ -1,0 +1,76 @@
+{
+  "dateCreated": "2019-10-13T17:44:01.353Z",
+  "@type": "edm:Document",
+  "@id": "http://ai4bd.com/resource/data/document/7fb1bd6c-ddc7-4369-a292-68042d30b158",
+  "relatedCreativeWork": "http://ai4bd.com/resource/data/document/eeeb2964-3140-4fc3-a962-13658235670f",
+  "title": "a-real-test7.png - Page 1",
+  "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+  "interpretedContent": [
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-1",
+      "@type": "gdm:GdmResource",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "contains": [
+        {
+          "juzo-boolean:batik": "black",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-1",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        },
+        {
+          "juzo-boolean:farbe": "3021",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-1-2",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        }
+      ]
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/gdm-resource/resource-2",
+      "@type": "gdm:GdmResource",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "contains": [
+        {
+          "juzo-numeric:lal": "3021",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-1",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        },
+        {
+          "juzo-numeric:lbl": "3021",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-2",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        },
+        {
+          "juzo-numeric:lcl": "3021",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-3",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        },
+        {
+          "juzo-numeric:ldl": "3021",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-4",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        },
+        {
+          "juzo-boolean:einbeinstrumpfhose": "",
+          "confidence": 1,
+          "@id": "http://ai4bd.com/resource/data/gdm-resource-attribute/ra-2-5",
+          "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+          "@type": "gdm:GdmResourceAttribute"
+        }
+      ]
+    }
+  ],
+  "documentPage": [
+    "http://ai4bd.com/resource/data/document-page/7c331353-5a14-4631-9628-9696b7a020cd"
+  ]
+}

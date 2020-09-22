@@ -1,0 +1,125 @@
+{
+  "@context": {
+    "edm": "http://ai4bd.com/resource/edm/",
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "mss": "http://ai4bd.com/resource/cdm/mss/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/product-group-shape/43710a0d-a554-49bc-8066-30cd6fabe3c8",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "Vierkantmagnet",
+      "sh:property": [
+        {
+          "sh:datatype": "xsd:double",
+          "sh:name": "heightTolerance",
+          "sh:path": "mss:heightTolerance"
+        },
+        {
+          "sh:datatype": "xsd:double",
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "height",
+          "sh:path": "mss:height"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "material",
+          "sh:path": "mss:material"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "magnetization1",
+          "sh:path": "mss:magnetization1"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:name": "processing",
+          "sh:path": "mss:processing"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:name": "specification",
+          "sh:path": "mss:specification"
+        },
+        {
+          "sh:datatype": "xsd:double",
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "length",
+          "sh:path": "mss:length"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:name": "magnetization2",
+          "sh:path": "mss:magnetization2"
+        },
+        {
+          "sh:class": {
+            "@id": "edm:Product"
+          },
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:path": {
+            "sh:inversePath": {
+              "@id": "gdm:contains"
+            }
+          }
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:in": {
+            "@list": [
+              "Ja",
+              "Nein"
+            ]
+          },
+          "sh:max": 1,
+          "sh:min": 1,
+          "sh:name": "toolavailable",
+          "sh:path": "mss:toolAvailable"
+        },
+        {
+          "sh:datatype": "xsd:double",
+          "sh:name": "widthTolerance",
+          "sh:path": "mss:widthTolerance"
+        },
+        {
+          "sh:datatype": "xsd:double",
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "width",
+          "sh:path": "mss:width"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:name": "coating",
+          "sh:path": "mss:coating"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:name": "miscellaneous",
+          "sh:path": "mss:miscellaneous"
+        },
+        {
+          "sh:datatype": "xsd:string",
+          "sh:maxCount": 1,
+          "sh:minCount": 1,
+          "sh:name": "productDesignation",
+          "sh:path": "mss:productDesignation"
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "edm:ProductGroup"
+      }
+    }
+  ]
+}

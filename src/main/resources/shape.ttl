@@ -1,0 +1,23 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/ns#> .
+@prefix edm: <http://ai4bd.com/resource/edm/> .
+@prefix gdm: <http://ai4bd.com/resource/gdm/> .
+
+
+ex:TemperatureMeasureShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path edm:returnFlowTemperature ;
+        sh:sparql [
+            a sh:SPARQLConstraint ;
+                  sh:message "Average temerature should be grater than 50 Celcius." ;
+                  sh:prefix edm: ;
+                  sh:select """
+                    SELECT $this (sum(?temperature) as ?value) {
+                        $this $PATH ?temperature .
+                    }
+                    GROUP BY $this
+                    HAVING (sum(?temperature) > 50)
+                  """
+        ]
+    ] .

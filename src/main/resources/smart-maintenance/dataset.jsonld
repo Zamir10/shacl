@@ -1,0 +1,18 @@
+{
+  "dataGraph": [
+    {
+      "@id": "http://ai4bd.com/resource/data/resource-attribute/ba224e90-fe8d-4cea-8b99-8fad798cb41a",
+      "@type": "gdm:ResourceAttribute",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "confidence": "1.0",
+      "returnFlowTemperature": "93.5"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/resource-attribute/35a7cb94-e17e-4f85-8bfa-dee3ee746169",
+      "@type": "gdm:ResourceAttribute",
+      "@context": "http://models.ai4bd.org/jsonld/edm-context.jsonld",
+      "confidence": "1.0",
+      "returnFlowTemperature": "97.0"
+    }
+  ],
+}

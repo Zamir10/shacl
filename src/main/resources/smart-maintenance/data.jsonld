@@ -1,0 +1,68 @@
+{
+  "@graph": [
+    {
+      "@id": "http://ai4bd.com/resource/data/resource/da41b97a-f31f-467e-afa2-696b9063f845",
+      "@type": "gdm:Resource",
+      "dateCreated": "2020-05-29T14:17:39+02:00",
+      "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+      "happensAt": [
+        "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+        "http://ai4bd.com/resource/data/place/53152887-81c1-4ce7-928d-d0070cc5ef44"
+      ],
+      "contains": [
+        "http://ai4bd.com/resource/data/resource-attribute/ba224e90-fe8d-4cea-8b99-8fad798cb41a"
+      ]
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/resource-attribute/35a7cb94-e17e-4f85-8bfa-dee3ee746169",
+      "@type": "gdm:ResourceAttribute",
+      "confidence": "1.0",
+      "returnFlowTemperature": "40.0"
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/resource/c7638619-2cec-4230-9766-a5f320fa4005",
+      "@type": "gdm:Resource",
+      "dateCreated": "2020-07-15T14:13:56+02:00",
+      "agent": "http://ai4bd.com/resource/data/organization/a20dc52e-5f1d-490b-996a-e61d49fcd879",
+      "happensAt": [
+        "http://ai4bd.com/resource/data/software-agent/0ec4b5c7-43c6-47b0-a331-fd371fab25c5",
+        "http://ai4bd.com/resource/data/place/8e2a0097-a475-4494-b4de-1db3350f1cf2"
+      ],
+      "contains": [
+        "http://ai4bd.com/resource/data/resource-attribute/ba224e90-fe8d-4cea-8b99-8fad798cb41a"
+      ]
+    },
+    {
+      "@id": "http://ai4bd.com/resource/data/resource-attribute/ba224e90-fe8d-4cea-8b99-8fad798cb41a",
+      "@type": "gdm:ResourceAttribute",
+      "confidence": "1.0",
+      "returnFlowTemperature": "38.5"
+    }
+  ],
+  "@context": {
+    "agent": {
+      "@id": "http://www.ai4bd.com/resource/edm/agent"
+    },
+    "contains": {
+      "@id": "http://ai4bd.com/resource/edm/contains",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://ai4bd.com/resource/edm/dateCreated",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "happensAt": {
+      "@id": "http://ai4bd.com/resource/edm/happensAt"
+    },
+    "confidence": {
+      "@id": "http://ai4bd.com/resource/edm/confidence",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "returnFlowTemperature": {
+      "@id": "http://ai4bd.com/resource/edm/returnFlowTemperature",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "gdm": "http://ai4bd.com/resource/gdm/",
+    "edm": "http://ai4bd.com/resource/edm/"
+  }
+}

@@ -1,0 +1,22 @@
+@prefix ns0: <http://ai4bd.com/resource/cdm/mss/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ai4bd.com/resource/data/mss/SOMASYS/100/00-0000011>
+  a <http://ai4bd.com/resource/edm/ProductGroup> ;
+  ns0:material "HF a"^^xsd:xs:string ;
+  ns0:specification "30/26"^^xsd:xs:string ;
+  ns0:magnetization1 "2-polig magnetisiert"^^xsd:xs:string ;
+  ns0:toolAvailable "Ja"^^xsd:xs:string ;
+  ns0:coating "0"^^xsd:xs:string ;
+  ns0:miscellaneous "schwarz lackiert"^^xsd:xs:string ;
+  ns0:dim1 4.700000e+1 ;
+  ns0:dim1Tolerance "-0,20"^^xsd:xs:string ;
+  ns0:dim2 1.800000e+1 ;
+  ns0:dim2Tolerance "+0,60"^^xsd:xs:string ;
+  ns0:dim3 3.000000e+1 ;
+  ns0:dim3Tolerance "+0,10 -0,20"^^xsd:xs:string ;
+  ns0:dim4 2.500000e+1 ;
+  ns0:dim4Tolerance "±0,50"^^xsd:xs:string ;
+  ns0:dim5 4.300000e+1 ;
+  ns0:dim5Tolerance "±0,10"^^xsd:xs:string ;
+  ns0:externalItemDesignation "Sondermagnetsystem"^^xsd:xs:string .

@@ -1,0 +1,83 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix edm:  <http://ai4bd.com/resource/edm/> .
+@prefix gdm:  <http://ai4bd.com/resource/gdm/> .
+@prefix mss:  <http://ai4bd.com/resource/cdm/mss/> .
+
+<http://ai4bd.com/resource/product-group-shape/9aa11af0-5ec9-4477-8fe6-8d0c6f1a9818>
+    a              sh:NodeShape ;
+    sh:targetClass edm:ProductGroup ;
+    rdfs:label     "Ringausschnittmagnet" ;
+    sh:property    [ sh:path     mss:material ;
+                     sh:datatype xsd:string ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "material" ; ] ;
+    sh:property    [ sh:path     mss:specification ;
+                     sh:datatype xsd:string ;
+                     sh:name     "specification" ; ] ;
+    sh:property    [ sh:path     mss:outerRadius ;
+                     sh:datatype xsd:double ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "outerRadius" ; ] ;
+    sh:property    [ sh:path     mss:outerRadiusTolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "outerRadiusTolerance" ; ] ;
+    sh:property    [ sh:path     mss:innerRadius ;
+                     sh:datatype xsd:double ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "innerRadius" ; ] ;
+    sh:property    [ sh:path     mss:innerRadiusTolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "innerRadiusTolerance" ; ] ;
+    sh:property    [ sh:path     mss:width ;
+                     sh:datatype xsd:double ;
+                     sh:name     "width" ; ] ;
+    sh:property    [ sh:path     "widthTolerance" ;
+                     sh:datatype xsd:double ;
+                     sh:name     "widthTolerance" ; ] ;
+    sh:property    [ sh:path     mss:height ;
+                     sh:datatype xsd:double ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "height" ; ] ;
+    sh:property    [ sh:path     mss:heightTolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "heightTolerance" ; ] ;
+    sh:property    [ sh:path     mss:angle ;
+                     sh:datatype xsd:double ;
+                     sh:name     "angle" ; ] ;
+    sh:property    [ sh:path     mss:angleTolerance ;
+                     sh:datatype xsd:double ;
+                     sh:name     "angleTolerance" ; ] ;
+    sh:property    [ sh:path     mss:magnetization1 ;
+                     sh:datatype xsd:string ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ;
+                     sh:name     "magnetization1" ; ] ;
+    sh:property    [ sh:path     mss:magnetization2 ;
+                     sh:datatype xsd:string ;
+                     sh:name     "magnetization2" ; ] ;
+    sh:property    [ sh:path     mss:processing ;
+                     sh:datatype xsd:string ;
+                     sh:name     "processing" ; ] ;
+    sh:property    [ sh:path     mss:miscellaneous ;
+                     sh:datatype xsd:string ;
+                     sh:name     "miscellaneous" ] ;
+    sh:property    [ sh:path     mss:toolAvailable ;
+                     sh:datatype xsd:string ;
+                     sh:in       ( "Ja"
+                                   "Nein" ) ;
+                     sh:min      1 ;
+                     sh:max      1 ;
+                     sh:name     "toolAvailable" ; ] ;
+    sh:property    [ sh:path     mss:coating ;
+                     sh:datatype xsd:string ;
+                     sh:name     "coating" ; ] ;
+    sh:property    [ sh:path     [ sh:inversePath gdm:contains ; ] ;
+                     sh:class    edm:Product ;
+                     sh:maxCount 1 ;
+                     sh:minCount 1 ; ] .

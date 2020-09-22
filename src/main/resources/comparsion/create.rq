@@ -1,0 +1,40 @@
+CONSTRUCT {
+
+    ?x edm:interpretedContent ?resource .
+
+    ?resource rdf:type <gdm:GdmResource> .
+    ?resource gdm:contains ?rA0_0 .
+    ?rA0_0 <http://ai4bd.com/resource/cdm/juzo/boolean/orderType> "Bestellung" .
+    ?rA0_0 edm:confidence 1 .
+    ?rA0_0 rdf:type <gdm:GdmResourceAttribute> .
+    ?x ?y ?z .
+
+    ?z ?w ?v.
+
+    ?z ?m ?n .
+
+    ?v ?a ?b .
+
+}
+
+WHERE {
+
+    ?x a <http://ai4bd.com/resource/edm/Document> .
+
+    BIND(URI(CONCAT("http://ai4bd.com/resource/data/gdm-resource/",STRUUID())) as ?resource) .
+    BIND(URI(CONCAT("http://ai4bd.com/resource/data/gdm-resource-attribute/",STRUUID())) as ?rA0_0) .
+    ?x ?y ?z .
+
+    OPTIONAL {
+
+        ?z a <http://ai4bd.com/resource/gdm/GdmResource> .
+
+        ?z ?w ?v .
+
+        OPTIONAL {?z ?m ?n }
+
+        OPTIONAL {?v ?a ?b }
+
+    }
+
+}

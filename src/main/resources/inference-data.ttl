@@ -1,0 +1,10 @@
+@prefix ex: <http://example.org/ns#> .
+
+ex:ExampleRectangle
+    a ex:Rectangle ;
+    ex:width 7 ;
+    ex:height 8 .
+
+ex:InvalidRectangle    # Lacks a value for ex:height, so sh:condition is not met
+    a ex:Rectangle ;
+    ex:width 7 .
