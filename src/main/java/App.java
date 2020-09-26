@@ -14,23 +14,25 @@ import org.topbraid.shacl.validation.ValidationUtil;
 
 public class App {
 
-  public static final String DATA_DIR = "./src/main/resources/smart-maintenance/";
+  public static final String DATA_DIR = "./src/main/resources/sparql/";
   public static final String DATA_FILE = DATA_DIR + "data.ttl";
   public static final String SHAPE_FILE = DATA_DIR + "shape.ttl";
   public static final String QUERY_FILE = DATA_DIR + "query.rq";
 
   public static void main(String[] args) throws IOException {
 
-    Model model = JenaUtil.createDefaultModel();
-    FileManager.get().readModel(model, DATA_FILE, RDFLanguages.strLangTurtle);
+//    Model model = JenaUtil.createDefaultModel();
+//    FileManager.get().readModel(model, DATA_FILE, RDFLanguages.strLangTurtle);
+//
+//    Model shapeModel = JenaUtil.createDefaultModel();
+//    FileManager.get().readModel(shapeModel, SHAPE_FILE, RDFLanguages.strLangTurtle);
+//
+//    Resource report = ValidationUtil.validateModel(model, shapeModel, true);
+//
+//    System.out.println(report.getModel());
 
-    Model shapeModel = JenaUtil.createDefaultModel();
-    FileManager.get().readModel(shapeModel, SHAPE_FILE, RDFLanguages.strLangTurtle);
 
-    Resource report = ValidationUtil.validateModel(model, shapeModel, true);
-
-    System.out.println(report);
-
+  executeQuery();
   }
 
   public static void executeQuery() {
