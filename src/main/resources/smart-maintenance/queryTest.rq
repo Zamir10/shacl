@@ -1,0 +1,50 @@
+SELECT ?travelMethod
+   WHERE
+     {
+        SELECT DISTINCT
+                         ( IF
+                               (
+                                  (
+                                     (  SELECT    ?value
+                                        WHERE
+                                                  {
+                                                     GRAPH data: { ?obsValueID  ontology:value              ?value
+                                                                             ;  rdf:label                   "Availability"
+                                                                             ;  ontology:isObservedValueOf  ?obsID
+                                                                 . ?obsID       ssn:observationResultTime   ?time
+                                                                             ;  ssn:observedBy              ?id
+                                                                 }
+                                                     GRAPH meta: { ?id          rdf:label                   "MyBusService"  }
+                                                  }
+                                        ORDER BY  DESC (?time)
+                                        LIMIT     1
+                                     )  > 0
+                                  )
+                               ,  "Take Bus"
+                               ,  (
+                                        IF (
+                                              (
+                                                 (  SELECT    ?value
+                                                    WHERE
+                                                              {
+                                                                 GRAPH data: { ?obsValueID  ontology:value              ?value
+                                                                                         ;  rdf:label                   "Availability"
+                                                                                         ;  ontology:isObservedValueOf  ?obsID
+                                                                             . ?obsID       ssn:observationResultTime   ?time
+                                                                                         ;  ssn:observedBy              ?id
+                                                                             }
+                                                                 GRAPH meta: { ?id          rdf:label                   "MyBikeService"  }
+                                                              }
+                                                    ORDER BY  DESC (?time)
+                                                    LIMIT     1
+                                                 )  > 0
+                                              )
+                                           ,  "Take Bike"
+                                           ,  "Take Taxi"
+                                           )
+                                  )
+                               )  AS  ?travelMethod
+                         )
+        FROM         data:
+        WHERE        { ?1  ?2  ?3 }
+     }

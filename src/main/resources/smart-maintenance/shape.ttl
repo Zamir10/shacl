@@ -37,8 +37,8 @@ rdf: sh:declare [
                     ?resource gdm:contains ?attribute .
                     ?attribute edm:returnFlowTemperature ?temperature .
                 }
-                    GROUP BY $this
-                    HAVING (avg(?temperature) > 40.2)
+                GROUP BY $this
+                HAVING (avg(?temperature) > 40.2)
             """
         ]
     ] .

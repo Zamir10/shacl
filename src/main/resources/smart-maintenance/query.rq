@@ -1,12 +1,47 @@
 PREFIX gdm: <http://ai4bd.com/resource/gdm/>
 PREFIX edm: <http://ai4bd.com/resource/edm/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT $this (sum(?temp) as ?sum)
+
+SELECT *
 WHERE {
-  ?order edm:triggeredBy $targetNode .
-  ?order gdm:produces ?resource .
-  ?resource gdm:contains ?resAtt .
-  ?resAtt edm:returnFlowTemperature ?temp .
+  BIND ( EXISTS {
+      SELECT ?agent (AVG(?value) as ?average)
+      WHERE {
+        ?order edm:triggeredBy ?agent .
+        ?order gdm:produces ?resource .
+        ?resource gdm:contains ?attribute .
+        ?attribute edm:returnFlowTemperature ?value .
+        FILTER (?agent = <http://ai4bd.com/resource/data/software-agent/5eafeff2-ba40-4b5a-b573-1d656f028a88>)
+      }
+      GROUP BY (?agent)
+      HAVING (AVG(?value) > 39.2)
+    }
+   AS ?outer)
+  BIND ( IF(?outer = "true"^^xsd:boolean, "true"^^xsd:boolean, IF( EXISTS {
+      SELECT ?agent (AVG(?value) as ?average)
+      WHERE {
+        ?order edm:triggeredBy ?agent .
+        ?order gdm:produces ?resource .
+        ?resource gdm:contains ?attribute .
+        ?attribute edm:returnFlowTemperature ?value .
+        FILTER (?agent = <http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72>)
+      }
+      GROUP BY (?agent)
+      HAVING (AVG(?value) > 42)
+    } && (HOURS(NOW()) > 5 && HOURS(NOW()) < 23), "true"^^xsd:boolean, IF (EXISTS {
+       SELECT ?agent (AVG(?value) as ?average)
+       WHERE {
+         ?order edm:triggeredBy ?agent .
+         ?order gdm:produces ?resource .
+         ?resource gdm:contains ?attribute .
+         ?attribute edm:returnFlowTemperature ?value .
+         FILTER (?agent = <http://ai4bd.com/resource/data/software-agent/0ee8d50e-5f39-4cfc-ba94-768f49bd9b72>)
+       }
+       GROUP BY (?agent)
+       HAVING (AVG(?value) > 38)
+     } && (HOURS(NOW()) > 23 && HOURS(NOW()) < 5), "true"^^xsd:boolean, "false"^^xsd:boolean)))
+   AS ?inner)
+
+   FILTER (REGEX("true", STR(?outer), "i") || REGEX("true", STR(?inner), "i"))
 }
-GROUP BY ?this
-HAVING ((?sum) > 40)

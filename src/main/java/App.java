@@ -10,13 +10,14 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.riot.RDFLanguages;
 import org.apache.jena.util.FileManager;
 import org.topbraid.jenax.util.JenaUtil;
+import org.topbraid.shacl.util.ModelPrinter;
 import org.topbraid.shacl.validation.ValidationUtil;
 
 public class App {
 
-  public static final String DATA_DIR = "./src/main/resources/sparql/";
+  public static final String DATA_DIR = "./src/main/resources/smart-maintenance/";
   public static final String DATA_FILE = DATA_DIR + "data.ttl";
-  public static final String SHAPE_FILE = DATA_DIR + "shape.ttl";
+  public static final String SHAPE_FILE = DATA_DIR + "shapeTwo.ttl";
   public static final String QUERY_FILE = DATA_DIR + "query.rq";
 
   public static void main(String[] args) throws IOException {
@@ -29,10 +30,9 @@ public class App {
 //
 //    Resource report = ValidationUtil.validateModel(model, shapeModel, true);
 //
-//    System.out.println(report.getModel());
+//    System.out.println(ModelPrinter.get().print(report.getModel()));
 
-
-  executeQuery();
+    executeQuery();
   }
 
   public static void executeQuery() {
